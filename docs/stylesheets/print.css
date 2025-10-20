@@ -1,0 +1,337 @@
+/* Print-optimized CSS for MkDocs + Mermaid + PDF Export */
+
+@media print {
+    /* =============================================================================
+       LAYOUT OPTIMIZATION
+       ============================================================================= */
+    
+    /* Hide navigation and non-essential elements */
+    .md-header,
+    .md-sidebar,
+    .md-footer,
+    .md-nav,
+    .md-search,
+    .export-interface,
+    .export-menu {
+        display: none !important;
+    }
+    
+    /* Optimize main content area */
+    .md-main {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .md-main__inner {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .md-content {
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .md-content__inner {
+        margin: 0 !important;
+        padding: 1cm !important;
+    }
+    
+    /* =============================================================================
+       PAGE SETUP
+       ============================================================================= */
+    
+    @page {
+        margin: 2cm;
+        size: A4;
+        
+        @top-center {
+            content: attr(data-page-title);
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        @bottom-center {
+            content: "Page " counter(page);
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        @bottom-left {
+            content: attr(data-site-name);
+            font-size: 8pt;
+            color: #999;
+        }
+        
+        @bottom-right {
+            content: attr(data-generation-date);
+            font-size: 8pt;
+            color: #999;
+        }
+    }
+    
+    /* =============================================================================
+       TYPOGRAPHY OPTIMIZATION
+       ============================================================================= */
+    
+    body {
+        font-size: 12pt !important;
+        line-height: 1.4 !important;
+        color: #000 !important;
+        background: white !important;
+    }
+    
+    h1 {
+        font-size: 20pt !important;
+        page-break-before: always;
+        page-break-after: avoid;
+        margin-top: 0 !important;
+        margin-bottom: 16pt !important;
+        border-bottom: 2pt solid #333 !important;
+        padding-bottom: 8pt !important;
+    }
+    
+    h2 {
+        font-size: 16pt !important;
+        page-break-after: avoid;
+        margin-top: 20pt !important;
+        margin-bottom: 12pt !important;
+        border-bottom: 1pt solid #666 !important;
+        padding-bottom: 4pt !important;
+    }
+    
+    h3 {
+        font-size: 14pt !important;
+        page-break-after: avoid;
+        margin-top: 16pt !important;
+        margin-bottom: 8pt !important;
+    }
+    
+    h4, h5, h6 {
+        font-size: 12pt !important;
+        page-break-after: avoid;
+        margin-top: 12pt !important;
+        margin-bottom: 6pt !important;
+    }
+    
+    p {
+        margin-bottom: 8pt !important;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* =============================================================================
+       MERMAID DIAGRAM OPTIMIZATION
+       ============================================================================= */
+    
+    .mermaid {
+        page-break-inside: avoid !important;
+        margin: 16pt 0 !important;
+        padding: 8pt !important;
+        border: 1pt solid #ddd !important;
+        background: white !important;
+        text-align: center !important;
+        
+        /* Ensure diagrams fit on page */
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+    
+    .mermaid svg {
+        max-width: 100% !important;
+        height: auto !important;
+        
+        /* Ensure good contrast for print */
+        filter: contrast(1.2) !important;
+    }
+    
+    /* Mermaid text optimization */
+    .mermaid .node text,
+    .mermaid .edgeLabel {
+        font-size: 10pt !important;
+        font-family: "Arial", sans-serif !important;
+        fill: #000 !important;
+    }
+    
+    .mermaid .node rect,
+    .mermaid .node circle,
+    .mermaid .node polygon {
+        stroke: #000 !important;
+        stroke-width: 1.5px !important;
+    }
+    
+    .mermaid .edgePath path {
+        stroke: #000 !important;
+        stroke-width: 1.5px !important;
+    }
+    
+    /* =============================================================================
+       CODE AND CONTENT OPTIMIZATION
+       ============================================================================= */
+    
+    pre, code {
+        page-break-inside: avoid !important;
+        font-family: "Courier New", monospace !important;
+        font-size: 10pt !important;
+        background: #f8f8f8 !important;
+        border: 1pt solid #ddd !important;
+        padding: 8pt !important;
+        margin: 8pt 0 !important;
+    }
+    
+    code {
+        padding: 2pt 4pt !important;
+        margin: 0 !important;
+        background: #f0f0f0 !important;
+        border: 0.5pt solid #ccc !important;
+    }
+    
+    /* Tables */
+    table {
+        page-break-inside: avoid !important;
+        border-collapse: collapse !important;
+        width: 100% !important;
+        margin: 12pt 0 !important;
+        font-size: 10pt !important;
+    }
+    
+    th, td {
+        border: 1pt solid #333 !important;
+        padding: 4pt 8pt !important;
+        text-align: left !important;
+    }
+    
+    th {
+        background: #f0f0f0 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Lists */
+    ul, ol {
+        margin: 8pt 0 !important;
+        padding-left: 20pt !important;
+    }
+    
+    li {
+        margin-bottom: 4pt !important;
+        page-break-inside: avoid !important;
+    }
+    
+    /* =============================================================================
+       LINKS AND REFERENCES
+       ============================================================================= */
+    
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        color: #666;
+        font-style: italic;
+    }
+    
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after,
+    a[href=""]:after {
+        content: "";
+    }
+    
+    /* =============================================================================
+       SPECIAL ELEMENTS
+       ============================================================================= */
+    
+    /* Admonitions/Notes */
+    .admonition {
+        page-break-inside: avoid !important;
+        border: 1pt solid #999 !important;
+        padding: 8pt !important;
+        margin: 12pt 0 !important;
+        background: #f9f9f9 !important;
+    }
+    
+    .admonition-title {
+        font-weight: bold !important;
+        margin-bottom: 4pt !important;
+        font-size: 11pt !important;
+    }
+    
+    /* Blockquotes */
+    blockquote {
+        page-break-inside: avoid !important;
+        border-left: 3pt solid #ccc !important;
+        padding-left: 12pt !important;
+        margin: 12pt 0 !important;
+        font-style: italic !important;
+        color: #666 !important;
+    }
+    
+    /* =============================================================================
+       PAGE BREAK CONTROLS
+       ============================================================================= */
+    
+    /* Force page breaks before main sections */
+    .md-typeset h1:first-of-type {
+        page-break-before: auto !important;
+    }
+    
+    .md-typeset h1:not(:first-of-type) {
+        page-break-before: always !important;
+    }
+    
+    /* Avoid breaks after headings */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+    }
+    
+    /* Keep related content together */
+    figure,
+    .mermaid,
+    pre,
+    table,
+    .admonition {
+        page-break-inside: avoid !important;
+    }
+    
+    /* =============================================================================
+       UTILITY CLASSES
+       ============================================================================= */
+    
+    .print-break-before {
+        page-break-before: always !important;
+    }
+    
+    .print-break-after {
+        page-break-after: always !important;
+    }
+    
+    .print-no-break {
+        page-break-inside: avoid !important;
+    }
+    
+    .print-hide {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+}
+
+/* =============================================================================
+   SCREEN-ONLY STYLES (for export interface)
+   ============================================================================= */
+
+@media screen {
+    .print-only {
+        display: none !important;
+    }
+    
+    .print-hide {
+        display: block !important;
+    }
+}

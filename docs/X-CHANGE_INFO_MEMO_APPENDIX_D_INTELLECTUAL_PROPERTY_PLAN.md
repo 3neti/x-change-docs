@@ -27,11 +27,14 @@
 
 ## **D.4 Copyright & Patent Protection**
 - Registration of software source code and documentation with the **National Library / IPO Philippines**
-- Pending patent applications:
-    - *Voucher Tokenization Process*
-    - *Programmable Disbursement Framework*
-    - *Dynamic Redemption Routing Engine*
+- **Five pending patent applications** covering the core Pay Code technology stack:
+    1. **Pay Code** — rail-agnostic payment instruction framework (method + system)
+    2. **Settlement Envelope** — driver-based evidence gating system for conditional settlement (checklists, signals, gates, composable YAML drivers)
+    3. **Voucher Orchestration Engine** — programmable issuance, redemption routing, and metadata schema for three voucher types (redeemable, payable, settlement)
+    4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance (`extends` directive, multi-parent merge, circular dependency detection)
+    5. **Form Flow System** — autonomous multi-step input collection with declarative transformation (5 handler packages: form, KYC, location, selfie, signature)
 - Periodic IP audits and code escrow arrangements for investor confidence
+- The Settlement Envelope (Patent #2) and Driver Composition System (Patent #4) represent the highest-value IP components, enabling the insurance, lending, and government contractor verticals
 
 ---
 

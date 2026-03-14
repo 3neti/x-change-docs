@@ -8,6 +8,18 @@
 - Scope of x‑Change operations under partner Electronic Money Issuer (EMI) and Open Finance arrangements
 - Applicable laws and circulars (e.g., BSP Circulars 649, 944, 1108, 1122, 1160; RA 9160 as amended; RA 10173)
 
+**Pay Code Regulatory Classification**
+
+Pay Code does not create stored value, pool funds, or perform settlement. It functions as an **instruction reference layer**. The three voucher types map to existing regulatory concepts:
+
+| Voucher Type | Regulatory Analogue | Fund Custody | Settlement |
+|-------------|---------------------|-------------|------------|
+| **Redeemable** | Disbursement instruction / remittance reference | Partner bank/EMI | Issuer's existing rails |
+| **Payable** | Biller reference number / collection instruction | Collector's bank | QR PH, InstaPay, PesoNet |
+| **Settlement** | Settlement reference / claim anchor | Insurer or lender's bank | Existing banking rails |
+
+From a regulatory lens, Pay Code is closer to **biller reference numbers** and **transaction instruction identifiers** than to money instruments or alternative settlement networks. x-Change operates **within** the BSP framework — offering banks and EMIs a new channel, not a new license.
+
 ---
 
 ### **C.2 Licensing and Partnership Structure**

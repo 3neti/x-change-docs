@@ -90,8 +90,8 @@ Collectively, these references validate three macro trends that underpin x-Chang
 
 ## **7. Blue Ocean Context**
 
-While existing reports and policy papers cover **digital payments**, **e-wallet adoption**, and **government cash transfer programs**, none describe an **interoperable voucher clearing layer** that allows recipients—not issuers—to control fund redemption.  
-This absence defines x-Change’s *Blue Ocean* position: it creates a new demand space at the intersection of **payments infrastructure**, **regulatory compliance**, and **data-driven program delivery**.
+While existing reports and policy papers cover **digital payments**, **e-wallet adoption**, and **government cash transfer programs**, none describe a **rail-agnostic payment instruction layer** that unifies disbursement, collection, and conditional settlement across incompatible rails through a single programmable framework.  
+This absence defines x-Change's *Blue Ocean* position: it creates a new demand space at the intersection of **payments infrastructure**, **regulatory compliance**, and **data-driven program delivery** — expanding the addressable market from ₱5.6T (disbursement only) to **₱8T+** (disbursement + collection + settlement).
 
 Comparable precedents in other financial evolutions include:
 - **VisaNet (1970s)** – unified card-based credit issuance.
@@ -99,7 +99,7 @@ Comparable precedents in other financial evolutions include:
 - **UPI India (2016)** – unified push-based digital transfers.
 - **QR PH (2020)** – standardized merchant QR payments.
 
-x-Change represents the next step: a **pull-based, programmable disbursement protocol** that coexists with—but does not compete against—wallets and remittance systems.  
+x-Change represents the next step: a **programmable payment instruction protocol** (Pay Code) with three primitives — redeemable, payable, and settlement — that coexists with, but does not compete against, wallets, banks, and remittance systems.  
 It transforms fragmented, institution-bound flows into an open, certifiable, and monetizable infrastructure layer — a new market space rather than an incremental improvement.
 
 **Note:**  

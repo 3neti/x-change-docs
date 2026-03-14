@@ -2,8 +2,8 @@
 
 ## **B.1 System Overview**
 
-The **x-Change Platform** is a modular, cloud-native infrastructure for programmable digital vouchers.  
-It provides banks, electronic money issuers (EMIs), and enterprise partners with a secure framework for issuing, redeeming, and auditing tokenized payment instruments—while maintaining compliance, interoperability, and full institutional autonomy.
+The **x-Change Platform** is a modular, cloud-native infrastructure for **Pay Code** — a rail-agnostic payment instruction framework supporting three transaction primitives: **redeemable** (pull-based disbursement), **payable** (presentation-based collection), and **settlement** (evidence-gated conditional execution via Settlement Envelope).  
+It provides banks, EMIs, insurers, utilities, and government agencies with a secure framework for issuing, validating, routing, and auditing Pay Codes across institutions — while maintaining compliance, interoperability, and full institutional autonomy.
 
 ---
 
@@ -11,26 +11,35 @@ It provides banks, electronic money issuers (EMIs), and enterprise partners with
 
 ```mermaid
 flowchart LR
-    A[Partner Bank / EMI] -->|API / Webhook| B["Integration Gateway"]
-    B -->|Validated Request| C["Core Voucher Engine"]
-    C -->|Token + Signature| D["Attestation & Clearing Service"]
-    D -->|Ledger + Logs| E["Reporting & Analytics Dashboard"]
-    C -->|User Interaction| F["Web / Mobile Interfaces"]
+    A[Partner Bank / EMI / Insurer] -->|API / Webhook| B["Integration Gateway"]
+    B -->|Validated Request| C["Core Voucher Engine\n(3 Types)"]
+    C -->|Redeemable| D1["Redemption Pipeline"]
+    C -->|Payable| D2["Collection Pipeline"]
+    C -->|Settlement| D3["Settlement Envelope\n& Gate Engine"]
+    D1 & D2 & D3 -->|Signed Events| E["Attestation & Clearing Service"]
+    E -->|Ledger + Logs| F["Reporting & Analytics"]
+    C -->|User Interaction| G["PWA / Kiosk / Form Flow"]
 ```
 
 **Core Components**
 
-- **Core Voucher Engine**  
-  Handles voucher creation, tokenization, signing, and redemption logic with cryptographic assurance.
+- **Core Voucher Engine (Three Types)**  
+  Handles creation, tokenization, signing, and lifecycle management for redeemable, payable, and settlement Pay Codes. Includes dynamic per-voucher-feature pricing engine and campaign system.
+
+- **Settlement Envelope & Gate Engine**  
+  YAML-driven evidence collection and gating system. Manages checklists (documents, payload fields, attestations), signals (boolean approvals), and computed gates. Supports composable driver inheritance and a 10-state envelope lifecycle.
+
+- **Form Flow System**  
+  Autonomous multi-step input collection powering all redemption and evidence-gathering workflows. Five handler packages: form, KYC (HyperVerge), location (GPS), selfie (camera), signature (pad).
 
 - **Integration Gateway**  
-  Connects partner systems (banks, EMIs, fintech APIs) through secure REST/JSON endpoints with mTLS and OAuth-based authentication.
+  Connects partner systems (banks, EMIs, insurers, utilities) through secure REST/JSON endpoints with mTLS and OAuth 2.1 authentication.
 
-- **Web and Mobile User Layers**  
-  Provide recipient and merchant interfaces for voucher redemption, verification, and transaction tracking.
+- **PWA / Kiosk Interfaces**  
+  YAML-configurable frontend skins for use-case-specific interfaces (PhilHealth BST, utility billing, etc.). Offline-first PWA with service worker support.
 
 - **Admin, Analytics, and Reporting Dashboards**  
-  Offer compliance, finance, and operational visibility—fully integrated with the WorkOS identity platform for SSO, MFA, and SCIM provisioning.
+  Compliance, finance, and operational visibility — fully integrated with WorkOS identity platform for SSO, MFA, and SCIM provisioning.
 
 ---
 
@@ -57,18 +66,19 @@ flowchart LR
 
 | Layer | Category | Description |
 |-------|-----------|-------------|
-| **Application Layer** | Secure PHP-based microservices | Modular voucher, clearing, and attestation services |
-| **API Layer** | REST / JSON + Webhooks | Standardized partner integrations with OAuth 2.1 / mTLS |
-| **Frontend Layer** | Web & Mobile (SPA) | Responsive Vue-class interfaces for admin and recipients |
+| **Application Layer** | Modular PHP microservices (Laravel) | Core voucher engine, settlement envelope package, form flow manager, payment gateway abstraction |
+| **Settlement Engine** | YAML-driven driver system | Composable checklists, signals, gates; 10-state envelope lifecycle; driver inheritance |
+| **API Layer** | REST / JSON + Webhooks | Standardized partner integrations with OAuth 2.1 / mTLS; Laravel Sanctum tokens |
+| **Frontend Layer** | Vue 3 + TypeScript + Tailwind | PWA/kiosk interfaces with YAML-configurable skins; offline-first service worker |
 | **Identity & Access** | WorkOS Platform | SSO, SCIM, MFA, and RBAC enforcement |
-| **Data & Storage** | Encrypted Datastores | AES-256 at rest, TLS 1.3 in transit, immutable log chain |
+| **Data & Storage** | Encrypted Datastores | AES-256 at rest, TLS 1.3 in transit, immutable log chain; 50+ database tables |
 | **Infrastructure** | Cloud-native Containers | Multi-AZ deployments on AWS / DigitalOcean AP-Southeast-1 |
 | **Monitoring & Analytics** | SIEM + Metrics Stack | Centralized observability, compliance dashboards |
 
 ---
 
 **Summary:**  
-The x-Change architecture combines **federated issuance**, **central attestation**, and **modular scalability**—delivering a standards-compliant platform that banks can trust, regulators can audit, and investors can confidently back as the foundational infrastructure for programmable digital cash.
+The x-Change architecture combines **federated issuance**, **central attestation**, **three-type voucher lifecycle management**, and **programmable settlement gating** — delivering a standards-compliant platform that banks can trust, regulators can audit, and investors can confidently back as the foundational infrastructure for Pay Code.
 
 ---
 
@@ -451,10 +461,12 @@ x-Change is engineered for **high availability**, **business continuity**, and *
 
 ## **B.6 Intellectual Property Protection**
 
-- All proprietary **source code**, **AI/ML models**, and **infrastructure deployment scripts** are owned by **3neti Research & Development OPC**, protected under registered copyright and **pending patent applications** covering core innovations:
-    - *Voucher Tokenization Process* — cryptographically secure generation and validation of QR/SMS-based digital vouchers.
-    - *Dynamic Redemption Routing* — intelligent routing engine that directs voucher redemption across banks, EMIs, and cash agents based on availability and compliance.
-    - *Programmable Disbursement Framework* — modular rule engine enabling conditional or multi-step fund disbursements tied to identity, event triggers, or merchant logic.
+- All proprietary **source code**, **architecture**, and **infrastructure** are owned by **3neti Research & Development OPC**, protected under registered copyright and **pending patent applications** covering five core innovations:
+    1. **Pay Code** — rail-agnostic payment instruction framework (method + system)
+    2. **Settlement Envelope** — driver-based evidence gating system for conditional settlement
+    3. **Voucher Orchestration Engine** — programmable issuance, redemption routing, and metadata schema
+    4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
+    5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
 
 - The implementing company, **x-Change Philippines, Inc.**, operates under an **exclusive commercial license** from 3neti R&D OPC, ensuring clear separation between **intellectual property ownership** and **market execution rights**.
 

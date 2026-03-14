@@ -1,203 +1,200 @@
 # x-Change: Comprehensive FAQ
 
-## ❓WHO
-
-**Q: Who is this for?**  
-A: x-Change serves **institutions** (banks, EMIs, lenders, NGOs, money changers, LGUs) that need to disburse funds without pre-collecting bank details. Recipients benefit by choosing when and where to receive the funds.
-
-**Q: Who controls the funds?**  
-A: The **issuer institution** does. Funds are held in escrow until redeemed. Every voucher has traceable metadata and can include usage conditions (expiry, destination rules, etc.).
-
-**Q: Who handles identity verification?**  
-A: KYC and AML are enforced at **redemption**, not issuance. Redemption may require account ownership proof or validation via partner institutions.
-
----
-
-## ❓WHAT
+## ❓ FUNDAMENTALS
 
 **Q: What is x-Change?**  
-A: A programmable **voucher engine and escrow layer** that enables pull-based redemption of funds via QR code, SMS code, or printed token.
+A: x-Change is the **orchestration platform** behind **Pay Code** — a rail-agnostic payment instruction framework. It issues, validates, routes, and audits Pay Codes across institutions. Think of it as the invisible layer that connects banks, wallets, and agents — without holding funds, transmitting money, or requiring its own license.
 
-**Q: What makes this different from GCash, Maya, or direct bank transfers?**  
-A: Traditional systems are **push-based**: the sender decides the destination account. x-Change is **pull-based**: the recipient chooses. This provides flexibility and decouples disbursement from recipient readiness.
+**Q: What is a Pay Code?**  
+A: A Pay Code is a **bearer alphanumeric reference** — not money, not a wallet, not a payment method — that resolves, validates, and executes a transaction over the issuer's existing regulated rails. It is to digital payments what the URL was to the internet: a universal addressing layer.
+
+**Q: Who is this for?**  
+A: x-Change serves **institutions** — banks, EMIs, lenders, insurers, government agencies, utilities, gaming operators, NGOs — that need to disburse, collect, or settle funds across incompatible rails. Recipients benefit by choosing when, where, and how to transact.
 
 **Q: Is this a cryptocurrency or blockchain product?**  
-A: No. This is **not** crypto, blockchain, or stablecoin-based. Funds are held in **fiat currency**, inside **regulated financial institutions**.
+A: No. Pay Code operates entirely in **fiat currency**, within **regulated financial institutions**. No tokens, no blockchain, no stored value.
 
 ---
 
-## ❓WHEN
+## ❓ THREE VOUCHER TYPES
 
-**Q: When is x-Change useful?**  
-A: When the sender:
-- Doesn’t have the recipient’s full account details
-- Needs to disburse funds to **a group with variable readiness**
-- Wants to offer **cash-like flexibility** with **digital traceability**
-- Operates in **offline, print-first, or low-tech settings**
+**Q: What are the three voucher types?**  
+A: Pay Code supports three transaction primitives that cover the complete transaction surface:
 
-**Q: Can vouchers expire or be revoked?**  
-A: Yes. Issuers can set expiry dates, auto-cancellation windows, redemption conditions, or revoke vouchers manually.
+1. **Redeemable** — Pull-based disbursement. Institution escrows funds; recipient chooses when and where to claim (bank, wallet, or cash-out agent).
+2. **Payable** — Presentation-based collection. Payer presents code; pays through any supported channel; funds flow to collector.
+3. **Settlement** — Gate-controlled conditional execution. Funds move only after structured evidence, approvals, and computed gate conditions all pass via a Settlement Envelope.
 
----
+**Q: When do I use a Redeemable Pay Code?**  
+A: When you're disbursing funds and the recipient should choose the channel. Examples: government ayuda, wages, tips, OFW remittances, micro-loan release, corporate rebates, disaster relief.
 
-## ❓WHERE
+**Q: When do I use a Payable Pay Code?**  
+A: When you're collecting payments and need one code that works across every wallet and bank. Examples: utility billing, loan repayment, gaming cash-in, public transport fares.
 
-**Q: Where can the recipient redeem the voucher?**  
-A: At any supported endpoint:
-- e-Wallets (e.g., GCash, Maya)
-- Banks (BDO, RCBC, etc.)
-- Over-the-counter partners (rural banks, pawnshops, cash agents)
-- Other regulated payout channels
+**Q: When do I use a Settlement Pay Code?**  
+A: When fund release must be conditional — requiring document uploads, identity verification, authorization signals, or other prerequisites. Examples: PhilHealth claims, HMO reimbursement, motor insurance, home loan takeouts, government contractor payments.
 
-**Q: Where are the funds held before redemption?**  
-A: In the wallet or account of the **licensed issuer** (not x-Change). We do not hold or transmit funds directly.
+**Q: Can a Settlement Pay Code carry a denomination?**  
+A: Yes. Settlement vouchers may be:
+- **Zero-denominated** — insurance claims where money flows between institutions (e.g., PhilHealth → hospital) and the beneficiary receives no cash
+- **Positive-denominated** — micro-finance loans, contractor payments where funds are released to the recipient only after all gating conditions are met
 
----
-
-## ❓WHY
-
-**Q: Why not just send the money directly?**  
-A: Because direct transfers assume:
-- You know the recipient's full bank or wallet details
-- The recipient is ready to receive it now
-- There's a trusted channel already
-
-In many cases, those assumptions fail. x-Change solves this by **decoupling the disbursement** from the redemption—while still preserving control and traceability.
-
-**Q: Why is this better than handing out cash?**  
-A: Because it’s:
-- Traceable
-- Programmable (limits, expiry, audit)
-- Redeemable anytime
-- Still feels familiar for unbanked recipients
-
-**Q: Why would regulators approve this model?**  
-A: Because redemption always passes through **licensed financial entities**, with full audit trails, source metadata, and configurable compliance thresholds. It’s **more controlled than peer-to-peer transfers**.
+The defining characteristic is the **Settlement Envelope**, not the denomination.
 
 ---
 
-## ❓HOW
+## ❓ SETTLEMENT ENVELOPE
 
-**Q: How does the system work?**  
-A: At a high level:
-1. Institution escrows funds into a ledger or wallet
-2. x-Change generates a voucher (QR or SMS code)
-3. Recipient receives and later redeems the voucher
-4. Upon redemption, the funds are routed to their chosen, validated destination
+**Q: What is the Settlement Envelope?**  
+A: A structured evidence container bound to a Settlement Pay Code. It enforces prerequisites — document uploads, identity checks, authorization signals, and computed gate conditions — before settlement is permitted. Think of it as a programmable checklist that must be complete before money moves.
 
-**Q: Can issuers control where it gets redeemed?**  
-A: Yes. Redemption rules can be defined:
-- Specific destinations only (e.g., GCash, rural banks)
-- Only during business hours
-- Only by recipients passing identity checks
+**Q: How are envelopes configured?**  
+A: Via **YAML drivers** — declarative specifications of what evidence must be collected and what conditions must pass. Drivers define checklists (documents, payload fields, attestations), signals (boolean approvals from systems or humans), and gates (computed conditions that combine checklists and signals into a single `settleable` determination).
 
-**Q: What if someone steals or misuses a voucher?**  
-A: Vouchers can:
-- Require validation before redemption
-- Be linked to mobile or PIN
-- Be revoked before use
-- Be limited in amount, expiration, or redemption attempts
+**Q: Can drivers be combined?**  
+A: Yes. Drivers support **inheritance via `extends`**. A base driver defines common requirements; overlay drivers add context-specific items. Example: a married OFW buying a pre-selling property composes four drivers into 19 documents, 7 signals, and 9 gates — assembled declaratively, no code changes.
+
+**Q: What happens if conditions aren't met?**  
+A: Settlement is blocked. The envelope remains in an intermediate state until all gates pass. If conditions cannot be met, the envelope can be cancelled or rejected.
 
 ---
 
-## ❓REGULATION & LICENSING
+## ❓ HOW IT WORKS
 
-**Q: Does x-Change require a special BSP license?**  
-A: No, **not as a tech provider**. We operate under the regulatory perimeter of our **licensed clients** (EMIs, banks, etc.).
+**Q: How does a Redeemable Pay Code work?**  
+A:
+1. Institution escrows funds
+2. Pay Code generated (QR, SMS, or printed token)
+3. Recipient receives code
+4. Recipient redeems at chosen channel — any wallet, bank, or cash-out agent
+5. Funds released; audit logged
 
-We don’t:
-- Custody funds
-- Transmit money
-- Represent ourselves as a financial institution
+**Q: How does a Payable Pay Code work?**  
+A:
+1. Collector issues a payable Pay Code
+2. Payer scans QR or enters code at any supported channel
+3. Payment completed via any wallet or bank
+4. Funds settled to collector
 
-We **provide infrastructure**—issuance engines, redemption portals, metadata logs—that licensed institutions use within their own compliance frameworks.
+**Q: How does a Settlement Pay Code work?**  
+A:
+1. Provider issues settlement Pay Code
+2. Evidence collected via Settlement Envelope (documents, signals, approvals)
+3. Gate conditions evaluated
+4. If all gates pass → settlement authorized → funds move
+5. If gates fail → blocked until evidence is complete
 
-**Q: So why are cross-border features sensitive?**  
-A: Cross-border transfers can trigger:
-- Foreign exchange regulations (conversion of PHP to USD, etc.)
-- Licensing in other jurisdictions (as a remittance service or MSB)
-- Heightened AML scrutiny
+**Q: Can issuers control redemption rules?**  
+A: Yes. Per-Pay Code configuration includes:
+- Expiry dates and auto-cancellation
+- Channel restrictions (e.g., only GCash, only rural banks)
+- Geo-fencing and time windows
+- Amount bounds (exact, min, max)
+- Identity verification requirements
+- Redemption attempt limits
 
-To stay within safe regulatory bounds, x-Change currently **does not offer or promote cross-border redemption**. All operations remain **within the Philippines** and under local supervision.
-
-**Q: Who is responsible for AML/CFT compliance?**  
-A: The **issuing and redeeming institutions** (our clients). We provide logs, metadata, expiry controls, tagging, and risk-based features—but we are **not the regulated entity**.
+**Q: What if a Pay Code is stolen or misused?**  
+A: Pay Codes can be revoked before use, linked to mobile/PIN, limited by expiry and attempt count, and require identity validation. For settlement vouchers, the envelope itself provides additional protection — stolen codes are useless without evidence submission.
 
 ---
 
-## ❓WHY DO BANKS & EMIs PARTNER WITH x-CHANGE?
+## ❓ PAY CODE vs. EXISTING INSTRUMENTS
+
+**Q: How is Pay Code different from a check?**  
+A: A check is a paper-based bearer instruction killed by fraud, paper handling, and slow clearing. Pay Code is its digital successor: bearer-presentable, cryptographically secure, and executed over modern rails in real time. Same concept — *an instruction reference that triggers execution upon presentation* — without the paper.
+
+**Q: How is Pay Code different from e-wallets?**  
+A: Wallets are closed ecosystems — GCash users can't easily receive from BDO payroll. Pay Code is **rail-agnostic**: it works across wallets, banks, and cash-out agents. The recipient chooses the channel; no lock-in.
+
+**Q: How is Pay Code different from bank transfers?**  
+A: Bank transfers are push-based — the sender must know the exact account. Pay Code decouples value from destination. No account details needed upfront. The recipient decides.
+
+**Q: Does Pay Code compete with banks or wallets?**  
+A: No. Pay Code **connects** them. It is infrastructure, not a competing product. Banks and wallets retain custody, compliance, and customer relationships. x-Change provides the orchestration layer.
+
+---
+
+## ❓ REGULATION & LICENSING
+
+**Q: Does x-Change require a BSP license?**  
+A: No. x-Change operates **under** the regulatory perimeter of licensed banks and EMIs. It does not custody funds, transmit money, or create stored value. From a regulatory lens, Pay Code is closer to **biller reference numbers** and **transaction instruction identifiers** than to money instruments.
+
+**Q: What about Pay Codes used for collection (payable)?**  
+A: Payable Pay Codes function as **collection references** — similar to how billers already use reference numbers. The payment is executed through existing, regulated channels (QR PH, InstaPay, bank transfers). No new settlement system is created.
+
+**Q: What about Settlement Pay Codes?**  
+A: Settlement Pay Codes do not move money themselves. They serve as **settlement references** that anchor institutional transactions (e.g., insurer → hospital). Money moves through existing banking rails. The envelope provides audit infrastructure, not custody.
+
+**Q: Who handles KYC/AML?**  
+A: The **issuing and redeeming institutions** (banks, EMIs, insurers). x-Change provides logs, metadata, identity enforcement hooks, and audit trails — but it is not the regulated entity.
+
+**Q: What about cross-border transactions?**  
+A: Pay Codes are compatible with cross-border rails via licensed remittance partners. FX settlement occurs at the partner level. x-Change does not perform FX conversion or hold foreign currency.
+
+---
+
+## ❓ FOR BANKS & EMIs
 
 **Q: What value does x-Change provide to financial institutions?**  
-A: x-Change gives banks, EMIs, and financial service providers a **disbursement layer that goes beyond their app**. They can now serve:
-- Unbanked or app-less recipients
-- Informal segments (OTC, cash-first)
-- Clients without prior account registration
-- Mass payouts without full KYC collection upfront
+A: x-Change gives banks and EMIs three new capabilities through a single integration:
+- **Disbursement** — reach unbanked recipients without collecting account details
+- **Collection** — accept payments from any wallet/bank via one Pay Code
+- **Settlement** — orchestrate complex, evidence-gated institutional transactions
 
-We help them **reach new markets, improve redemption flexibility, and offer programmable money rails**—with minimal dev effort.
+All while preserving institutional control, compliance, and customer relationships.
 
-**Q: Aren’t banks capable of building this themselves?**  
-A: In theory, yes. But in practice, it’s a **non-core, high-friction build**. We let them:
-- Go to market faster
-- Avoid fragmented integrations (GCash, rural banks, agents, etc.)
-- Get audit, compliance, and logging built-in
+**Q: Can banks build this themselves?**  
+A: The concept appears simple, but the execution involves 50+ database tables, 100+ API endpoints, a composable YAML driver system, a settlement envelope state machine, multi-rail routing, and federation infrastructure. This is a **non-core, high-friction build** for any single institution — and it requires interoperability across institutions, which no single bank can achieve alone.
 
-**Q: So you're an aggregator or bridge?**  
-A: Think of us as their **account-agnostic payout abstraction layer**—we unify the rails and redemption flows. They issue. We route.
+**Q: Is x-Change an aggregator?**  
+A: Think of x-Change as a **scheme** — analogous to Visa or Mastercard. It enforces rules, routes messages, and ensures auditability. Banks retain local control of issuance and settlement. x-Change provides the protocol.
 
 ---
 
-## 💼 HOW DOES x-CHANGE MAKE MONEY?
+## 💼 BUSINESS MODEL
 
-**Q: What’s your business model?**  
-A: We have 3 primary revenue streams:
+**Q: How does x-Change make money?**  
+A: Six revenue streams across three voucher types:
 
-1. **Licensing Fees**
-    - For enterprise access to the voucher engine, APIs, portals, and integrations.
+1. **Transaction Fees** — Per Pay Code processed (issuance + redemption/collection/settlement)
+2. **Enterprise Licensing** — Annual platform access for institutional partners
+3. **Settlement Envelope Fees** — Per-envelope fee for gate-controlled transactions (complexity-based)
+4. **Value-Added Services** — Analytics, branded portals, feedback capture
+5. **Integration Projects** — One-time onboarding and customization
+6. **Float Yield & Breakage** — Share in partner-managed float; unredeemed vouchers
 
-2. **Redemption Margin**
-    - We earn a **small cut per transaction** (e.g., Instapay, PesoNet, OTC rails) via margin-sharing with issuer or partner.
-
-3. **Programmability Add-ons**
-    - We charge for advanced features:
-        - Expiry dates
-        - Geo-locking or channel-specific rules
-        - Bulk issuance or API automations
-        - White-label portals or branded vouchers
-
-This model aligns with financial institutions: **they retain control, earn more, and reach farther—with our tools.**
+Three voucher types multiply the addressable market from ₱5.6T (disbursement only) to **₱8T+** (disbursement + collection + settlement).
 
 ---
 
-## 🔒 WHAT STOPS OTHERS FROM COPYING THIS?
+## 🔒 DEFENSIBILITY & IP
 
-**Q: Isn’t this easy to replicate once big players see it?**  
-A: The concept looks simple—but the execution is not. x-Change manages the **entire programmable disbursement lifecycle**, including:
-- Secure escrow control
-- Voucher metadata generation and validation
-- Dynamic redemption routing across multiple rails
-- Fraud prevention, expiry enforcement, and double-spend protection
-- Partner-specific reconciliation and audit trails
+**Q: What's the real IP?**  
+A: The x-Change IP portfolio (patent pending) covers five areas:
+1. **Pay Code** — rail-agnostic payment instruction framework (method + system)
+2. **Settlement Envelope** — driver-based evidence gating system for conditional settlement
+3. **Voucher Orchestration Engine** — programmable issuance, redemption routing, and metadata schema
+4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
+5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
 
-These are not one-off features—they form a **coordinated, policy-driven engine** that’s deeply integrated with financial systems and compliance layers.
+All IP is owned by **3neti Research & Development OPC** and exclusively licensed to x-Change Philippines, Inc.
 
-**Q: What’s your real IP?**  
-A: Our **voucher orchestration engine**, **metadata schema**, and **routing logic**—the invisible layer that connects regulated rails, enforces voucher rules, and ensures traceable redemption. It’s the glue that makes the model scalable, auditable, and regulator-ready.
-
-**Q: What’s your moat?**  
+**Q: What's the competitive moat?**  
 A:
-- **Integration moat:** Once we’re embedded with banks and EMIs, switching is costly.
-- **Compliance moat:** Our architecture is designed to fit BSP and AMLC frameworks.
-- **Brand moat:** The “Powered by x-Change” mark becomes a trust signal for safe, redeemable digital cash.
+- **Integration moat** — Once embedded with banks and EMIs via federation protocol, switching is costly
+- **Network moat** — Value increases with each institution on the scheme (Metcalfe's law)
+- **Compliance moat** — Architecture designed for BSP, AMLC, and COA frameworks from day one
+- **IP moat** — Patent-pending technology across five distinct invention claims
+- **Brand moat** — "Powered by x-Change" becomes a trust signal for institutional-grade Pay Codes
 
 ---
 
-## 🎯 Final Punchline
+## 🎯 The Bottom Line
 
-> “Sending money directly works **when you know who you’re sending to, what account, and when**.
+> Pay Code is not another wallet. It's not another payment app.
 >
-> But in the real world—where recipients change wallets, lose access, or are offline—that’s not always the case.
+> It's the **addressing layer** that connects the wallets, banks, and institutions that already exist — with programmable rules, full auditability, and zero lock-in.
 >
-> x-Change flips the model: issue now, redeem later, anywhere.
+> Three primitives — **redeemable, payable, settlement** — cover the entire transaction surface.
 >
-> **Programmable. Account-agnostic. Traceable. Cash-like—but digital.**”
+> **Issue now. Transact later. Any channel. Full audit trail.**

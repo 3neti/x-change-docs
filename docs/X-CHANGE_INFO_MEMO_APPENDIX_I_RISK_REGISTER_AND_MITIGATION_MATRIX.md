@@ -88,14 +88,24 @@ The matrix is reviewed **semi-annually** by the **Audit & Risk Committee** and u
 
 | Risk | Description | Probability | Impact | Rating | Mitigation | Owner |
 |------|-------------|-------------|---------|:-------:|-------------|--------|
-| **Market Competition** | Entry of new fintechs or in-house voucher systems. | M | H | 🔴 | Speed to market; IP protection; differentiation via programmable features. | CEO / CPO |
-| **Adoption Risk** | Slow uptake by banks or end users. | M | M | 🟠 | Partner incentive programs; UX testing; marketing education. | COO |
+| **Market Competition** | Entry of new fintechs or in-house voucher systems. | M | H | 🔴 | Speed to market; 5 patent-pending IP claims; three-type architecture raises replication barrier. | CEO / CPO |
+| **Adoption Risk** | Slow uptake by banks or end users. | M | M | 🟠 | Partner incentive programs; phased voucher-type rollout (redeemable first, then payable, then settlement). | COO |
 | **Reputation Risk** | Negative press from failed disbursements or misuse. | M | H | 🔴 | Transparency, PR response plan, independent audits. | CEO / Comms |
 | **Strategic Misalignment** | Divergent goals between 3neti and x-Change PH. | L | M | 🟡 | Annual strategy offsite; joint steering committee. | Board |
 
+### I.3.6 Settlement & Collection-Specific Risks
+
+| Risk | Description | Probability | Impact | Rating | Mitigation | Owner |
+|------|-------------|-------------|---------|:-------:|-------------|--------|
+| **Evidence Fraud (Settlement)** | Fabricated documents or forged attestations submitted to Settlement Envelope. | M | H | 🔴 | Hash verification on uploads; review workflows (accept/reject); integration signals from trusted systems (e.g., KYC provider). | CTO / Compliance |
+| **Gate Manipulation (Settlement)** | Unauthorized override of gate conditions to force premature settlement. | L | H | 🟠 | Computed gates are boolean expressions evaluated server-side; no manual override without admin + audit trail; dual-authorization for gate exception. | CTO |
+| **Dispute Handling (Payable)** | Payer disputes collection after payment via payable Pay Code. | M | M | 🟠 | Deterministic Pay Code reference links payment to collection record; dispute resolution SLA with partner institutions. | COO / Legal |
+| **Envelope Staleness (Settlement)** | Envelopes remain in intermediate state indefinitely, tying up institutional resources. | M | M | 🟠 | Auto-expiry policies configurable per driver; admin dashboard monitors envelope aging; escalation alerts. | COO |
+| **Driver Misconfiguration** | YAML driver errors create impossible gate conditions or missing checklist items. | L | M | 🟡 | Driver validation on load; version control; staging environment testing before production deployment. | CTO |
+
 ---
 
-### I.3.6 People & HR Risks
+### I.3.7 People & HR Risks
 
 | Risk | Description | Probability | Impact | Rating | Mitigation | Owner |
 |------|-------------|-------------|---------|:-------:|-------------|--------|

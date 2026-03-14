@@ -1,17 +1,17 @@
 # **Information Memorandum (IM)**
-### *x-Change* – A Fintech Platform for Financial Inclusion and Digital Disbursement
+### *x-Change* – The Pay Code Orchestration Platform for Disbursement, Collection & Settlement
 **Prepared by:** 3neti Research & Development OPC  
-**Date:** October 2025
+**Date:** March 2026
 
 ---
 
 ## **1. Executive Summary**
 
 **Purpose of the Memorandum**  
-This Information Memorandum presents an investment opportunity in **x-Change** — a fintech platform revolutionizing the way funds, vouchers, and programmable disbursements are issued, redeemed, and monetized in the Philippines and beyond.
+This Information Memorandum presents an investment opportunity in **x-Change** — the orchestration platform behind **Pay Code**, a rail-agnostic payment instruction framework that enables institutions to disburse, collect, and settle funds across incompatible rails using three transaction primitives: **redeemable** (pull-based disbursement), **payable** (presentation-based collection), and **settlement** (evidence-gated conditional execution via Settlement Envelope).
 
 **Funding Requirement**  
-₱100 million to fully capitalize a new implementing company, **x-Change Philippines, Inc.**, which will operate **x-Change** under an exclusive, long-term Philippine license from **3neti Research & Development OPC** (the IP owner).  
+₱100 million to fully capitalize a new implementing company, **x-Change Philippines, Inc.**, which will operate **x-Change** under an exclusive, long-term Philippine license from **3neti Research & Development OPC** (the IP owner and patent-pending technology developer).  
 Investor proceeds will be used to subscribe to primary shares and fund capitalization.  
 As part of this licensing arrangement, **3neti R&D OPC** will be granted **30% carried equity** in **x-Change Philippines, Inc.** — representing the cost of the exclusive rights, technology, and intellectual property supporting the venture.
 
@@ -19,7 +19,7 @@ As part of this licensing arrangement, **3neti R&D OPC** will be granted **30% c
 
 | Category | Allocation | Description |
 |-----------|-------------|-------------|
-| Product & Platform Development | ₱30M | Core platform build, system integrations, and IP registration |
+| Product & Platform Development (3neti R&D Contract) | ₱30M | Core three-voucher-type engine, Settlement Envelope package, Form Flow system, federation infrastructure, payment gateways, PWA/kiosk, API layer, IP registration (8 workstreams — see Appendix A) |
 | Regulatory & Compliance | ₱7M | Licensing, legal, audit, and data privacy requirements |
 | Marketing & Partnerships | ₱13M | Pilot programs, onboarding, branding, and strategic partnerships |
 | Operations & Staffing | ₱20M | Core team, administration, and cloud infrastructure |
@@ -45,14 +45,13 @@ Future capital raises, if any, will be for scaling and regional expansion — no
 ## **2. The Opportunity**
 
 **Market Gap**  
-Over 26 million Filipinos remain underbanked, even as smartphone penetration and internet access continue to rise nationwide. Digital payments are growing rapidly — yet market participation remains uneven.  
-**GCash** currently dominates with an estimated 19 million daily transactions, leaving a wide performance gap for other players such as **Maya, BDO Pay, and BPI Vybe**, which struggle to match scale and interoperability.  
-The market lacks a neutral, programmable disbursement infrastructure that allows these institutions to compete effectively without reinventing wallet ecosystems from the ground up.
+Over 26 million Filipinos remain underbanked, even as smartphone penetration and internet access continue to rise nationwide. Digital payments are growing rapidly — yet the market remains fragmented across incompatible rails. **GCash** dominates disbursement with ~19 million daily transactions, but no single platform connects disbursement, collection, and settlement across institutions.  
+The market lacks a **neutral, programmable payment instruction layer** that allows banks, EMIs, insurers, utilities, and government agencies to transact across all three surfaces — without reinventing infrastructure for each.
 
 **Strategic Positioning – A Blue Ocean Opportunity**  
-Rather than competing directly in the saturated e-wallet market, **x-Change** creates an open and interoperable layer — a **programmable disbursement and digital voucher network** that banks, EMIs, and enterprises can license or white-label.  
-This represents a *Blue Ocean* opportunity: it transforms disbursements from cost centers into competitive engagement tools.  
-By providing the technology rails that level the playing field, **x-Change** enables traditional financial institutions and smaller fintechs to capture share in the ₱5.6 trillion digital payments market — without building their own closed ecosystems.
+Rather than competing in the saturated e-wallet market, **x-Change** creates the **orchestration layer underneath** — a rail-agnostic **Pay Code framework** that banks, EMIs, insurers, and government agencies can adopt through a single integration.  
+Pay Code introduces three transaction primitives that cover the complete transaction surface: **redeemable** (disbursement), **payable** (collection), and **settlement** (conditional, evidence-gated execution).  
+This represents a *Blue Ocean* opportunity: it transforms payments from siloed, rail-specific integrations into a unified, programmable instruction layer — analogous to what Visa/Mastercard did for card payments, but for digital payment instructions.
 
 **Public-sector relevance: auditability and anti-fraud advantage**  
 In recent years, the Philippine government has faced mounting public scrutiny over how funds for infrastructure and social programs are released and monitored. Agencies such as the **DPWH** and **DSWD**, together with local governments, now handle billions of pesos in direct disbursements — from infrastructure payments to “**ayuda**” and emergency assistance — where transparency and traceability are paramount.
@@ -62,12 +61,21 @@ This makes **x-Change** particularly attractive to public-sector entities, local
 **x-Change** turns compliance into assurance — giving agencies and donors verifiable evidence that every peso is properly delivered and recorded.
 
 **Market Size & Growth**  
-The Philippines’ digital payments volume is projected to exceed **₱5.6 trillion by 2025**, with daily transaction counts already surpassing 20 million across wallet and bank platforms. Yet more than **26 million adults remain underbanked**, and most government and enterprise disbursements are still processed manually or through closed ecosystems.
+The Philippines' digital payments volume exceeds **₱5.6 trillion**, with daily transaction counts surpassing 20 million across wallet and bank platforms. Yet more than **26 million adults remain underbanked**, and most institutional disbursements, collections, and settlements are processed through fragmented, rail-specific systems.
 
-Public and social aid programs such as DSWD’s “**ayuda**,” LGU subsidies, and donor-funded cash transfers account for an estimated **₱500 billion annually** — a massive opportunity for auditable, efficient, and inclusive digital payout systems.  
-Beyond the public sector, the **digital marketing, loyalty, and rewards ecosystem** represents another **₱200 billion+** in programmable engagement value where vouchers and digital tokens can replace traditional coupons and rebates.
+The three-voucher-type model dramatically expands the addressable market:
 
-Together, these adjacent verticals form a **₱6-trillion addressable market**, where **x-Change** can serve as the programmable disbursement and voucher infrastructure layer across finance, commerce, and governance.
+| Segment | Estimated Annual Volume | Voucher Type |
+|---------|------------------------|-------------|
+| Government aid & social protection | ₱500B+ | Redeemable |
+| Corporate disbursements & remittances | ₱2T+ | Redeemable |
+| Utility billing & biller collections | ₱1.5T+ | Payable |
+| Gaming & lottery | ₱300B+ | Payable + Redeemable |
+| Insurance claims & settlement (PhilHealth, HMOs, motor) | ₱800B+ | Settlement |
+| Lending & micro-finance | ₱500B+ | Redeemable + Payable + Settlement |
+| Loyalty, rewards & marketing | ₱200B+ | Redeemable |
+
+Together, these verticals form a **₱8+ trillion addressable market** — compared to ₱5.6T under the original disbursement-only model. Pay Code's three primitives unlock collections and conditional settlement as entirely new revenue surfaces.
 
 **Target Customers**
 
@@ -85,45 +93,75 @@ Together, these adjacent verticals form a **₱6-trillion addressable market**, 
 ## **3. The Solution**
 
 **Overview**  
-**x-Change** is a programmable disbursement and voucher platform that lets institutions issue digital cash securely and flexibly.  
-Instead of pushing funds into a recipient’s fixed account, **x-Change** escrows the funds and generates a redeemable QR or SMS-based voucher. The recipient then **pulls the funds** into their preferred destination — bank, e-wallet, or cash-out agent — at their time and convenience.  
-This “issue now, redeem later, anywhere” model gives institutions full control and auditability while giving recipients freedom and accessibility.
+**x-Change** is the orchestration platform behind **Pay Code** — a rail-agnostic payment instruction framework. A Pay Code is a bearer alphanumeric reference that resolves, validates, and executes a transaction over the issuer's existing regulated rails. It is to digital payments what the URL was to the internet: a universal addressing layer.
 
-**How It Works**
-1. **Institution escrow:** Funds are deposited in a partner bank or EMI wallet under the control of the issuing institution.
-2. **Voucher creation:** x-Change generates a secure voucher (QR or SMS code) tied to transaction metadata and redemption rules.
-3. **Distribution:** Recipients receive the voucher via SMS, printout, or digital link — no app required.
-4. **Redemption:** When ready, the recipient redeems through their chosen, validated channel — wallet, bank, or OTC partner.
-5. **Audit and reporting:** Every transaction is logged, time-stamped, identity-verified, and available for reconciliation and compliance reporting.
+The platform supports three transaction primitives:
+
+- **Redeemable** — Institution escrows funds; recipient pulls into any channel (bank, wallet, cash-out agent)
+- **Payable** — Payer presents code; pays through any supported channel; funds flow to collector
+- **Settlement** — Funds move only after structured evidence, approvals, and computed gate conditions all pass via a **Settlement Envelope**
+
+These three primitives cover **disbursement, collection, and conditional settlement** — the complete transaction surface.
+
+**How Each Voucher Type Works**
+
+*Redeemable (Disbursement):*
+1. Institution escrows funds in partner bank/EMI
+2. Pay Code generated (QR, SMS, or printed token)
+3. Recipient receives code — no app required
+4. Recipient redeems at chosen channel — any wallet, bank, or cash-out agent
+5. Funds released; full audit logged
+
+*Payable (Collection):*
+1. Collector issues payable Pay Code (printed on bill, sent via SMS, displayed as QR)
+2. Payer scans QR or enters code at any supported channel
+3. Payment validated; funds settled to collector
+4. Automatic posting and reconciliation
+
+*Settlement (Conditional Execution):*
+1. Provider issues settlement Pay Code bound to a Settlement Envelope
+2. Evidence collected via envelope: document uploads, identity checks, authorization signals
+3. Computed gate conditions evaluated
+4. All gates pass → settlement authorized → funds move between parties
+5. Full evidence chain retained for audit
+
+**The Settlement Envelope**  
+The highest-value architectural innovation. Each settlement Pay Code is bound to an envelope configured by **YAML drivers** — declarative specifications of required evidence and conditions. Drivers define checklists (documents, payload fields, attestations), signals (boolean approvals from systems or humans), and gates (computed conditions). Drivers support **composable inheritance**: new verticals are launched by writing YAML, not code.
+
+Settlement vouchers may be **zero-denominated** (insurance — money between institutions) or **positive-denominated** (loans, contractor payments — funds to recipient after gates pass).
 
 **Core Features**
-- Voucher generation and redemption (QR, SMS, or print)
-- Wallet-based transfers and float management
-- API-driven integrations for banks, EMIs, and payment gateways
-- Configurable redemption rules (limits, expiry, geolocation)
-- Built-in compliance, audit logs, and metadata tagging
-- Feedback, analytics, and reporting dashboards
-- Optional branded portals and landing pages for engagement campaigns
+- Three voucher types with unified lifecycle management
+- Settlement Envelope with YAML-driven evidence gating
+- Form Flow System for autonomous multi-step input collection
+- Dynamic per-voucher-feature pricing engine
+- Multi-gateway payment abstraction (InstaPay, PesoNet, OTC)
+- Federation protocol: cryptographic licensing, dual-signature verification, clearing attestation logs
+- Configurable rules per Pay Code (expiry, geo-fence, channel filters, amount bounds)
+- Built-in compliance, immutable audit logs, and metadata tagging
+- PWA/kiosk interfaces with YAML-configurable skins
+- API-first design with OAuth 2.1 / mTLS security
 
 **Technology Architecture**  
-**x-Change** is built as a **modular, cloud-native platform** designed for security, scalability, and interoperability.  
-It follows a **microservice-based architecture** with API-first design principles, allowing seamless integration with partner banks, EMIs, and payment gateways.  
-All components are **auditable, data-encrypted, and compliance-ready**, supporting KYC, AML, and audit requirements under BSP and AMLC frameworks.  
-The platform is technology-agnostic and deployable across modern cloud environments, ensuring reliability, uptime, and flexibility for partner institutions.
+**x-Change** is built as a **modular, cloud-native platform** designed for security, scalability, and interoperability. The architecture comprises interdependent packages: core voucher engine, settlement envelope, form flow manager, payment gateway abstraction, and federation infrastructure.  
+All components are **auditable, data-encrypted, and compliance-ready**, supporting KYC, AML, and audit requirements under BSP and AMLC frameworks.
 
 **Key Advantages**
-- **Pull-based disbursement model:** recipients redeem funds on their terms and preferred channels — improving flexibility, inclusion, and transaction success rates.
-- **Bank-grade compliance:** built-in audit trails, metadata tagging, and identity validation make every transaction traceable and regulator-ready.
-- **Seamless integration:** open APIs and modular components enable quick adoption by banks, EMIs, and government systems without disrupting existing infrastructure.
-- **Frictionless redemption experience:** recipients can claim funds instantly via QR, SMS, or partner agents — no app downloads, no onboarding hurdles, and minimal transaction friction.
-- **Inclusive access:** app-less redemption ensures usability even in low-connectivity or unbanked environments.
-- **Scalable monetization:** supports multiple revenue streams — licensing, transaction margins, and programmable features — across private and public sector use cases.
+- **Three primitives, one integration:** Disbursement, collection, and settlement through a single platform — no per-rail, per-wallet integrations.
+- **Programmable settlement:** The Settlement Envelope turns simple payment references into evidence-gated instruments that handle insurance claims, home loans, and government contracts with the same architecture that handles a ₱100 tip.
+- **Recipient autonomy:** Recipients choose the channel. No app required. Feature phones are first-class citizens.
+- **Institutional neutrality:** x-Change does not compete with wallets or banks. It connects them. Analogous to a card scheme (Visa, Mastercard) — enforcing rules and routing while institutions retain control.
+- **Bank-grade compliance:** Immutable audit trails, hash-anchored event sequences, dual-signature verification, and full regulatory alignment from day one.
+- **Configuration over code:** New use cases and verticals are launched by writing YAML drivers, not custom software.
 
-**Intellectual Property Strategy**
-- Proprietary **voucher orchestration engine** for secure issuance, validation, and routing
-- Proprietary **x-Change QR** encoding and rendering framework, designed to carry transaction metadata securely and verifiably
-- API licensing model with partner-specific programmable rules
-- Trademark and copyright protections across brand identity, documentation, and source code
+**Intellectual Property Strategy (Patent Pending)**
+1. **Pay Code** — rail-agnostic payment instruction framework (method + system)
+2. **Settlement Envelope** — driver-based evidence gating system for conditional settlement
+3. **Voucher Orchestration Engine** — programmable issuance, redemption routing, and metadata schema
+4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
+5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
+
+All IP owned by **3neti Research & Development OPC** and exclusively licensed to x-Change Philippines, Inc.
 
 ---
 
@@ -131,39 +169,38 @@ The platform is technology-agnostic and deployable across modern cloud environme
 
 | Revenue Stream | Description | Illustration |
 |----------------|--------------|---------------|
-| **Disbursement Fees** | Per-transaction service fee charged to partner banks or EMIs for each voucher or payout processed through the x-Change platform. | ₱5 per disbursement × 500,000 tx/month ≈ ₱2.5M monthly revenue. |
-| **Value-Added Services** | Fees from programmable and data-driven modules such as feedback capture, analytics, and branded landing pages. | ₱1–₱50 per event depending on feature and partner volume. |
-| **Enterprise Licensing** | Annual license or subscription for institutional partners (banks, EMIs, large enterprises) providing API access, compliance modules, and support SLAs. | ₱500,000–₱1,000,000 per license per year. |
-| **Implementation & Integration** | One-time professional-service fee for onboarding, API setup, and customization per financial institution or enterprise client. | ₱5M average per integration. |
-| **Float Yield Participation** | Share in yield from partner-managed transaction floats or settlement funds held by licensed EMIs and banks. | Typically 3–5% annual yield share under partner agreements. |
-| **Breakage Revenue** | Income derived from unredeemed or expired vouchers, as permitted under partner or program agreements. | Typically 1–3% of total issued value, subject to audit and compliance. |
+| **Transaction Fees** | Per Pay Code processed — covers issuance + redemption (redeemable), collection (payable), or settlement (settlement). Fee varies by type and complexity. | ₱5 avg × 3M tx/month = ₱15M/month at scale |
+| **Settlement Envelope Fees** | Per-envelope fee for gate-controlled settlement transactions. Priced by complexity (number of gates, documents, signals). | ₱10–₱50 per envelope |
+| **Enterprise Licensing** | Annual platform access for institutional partners (banks, EMIs, insurers, utilities) including API access, compliance modules, and SLAs. | ₱500K–₱1M per client per year |
+| **Value-Added Services** | Analytics, branded portals, feedback capture, kiosk skins, and reporting dashboards. | ₱1–₱50 per event |
+| **Integration Projects** | One-time onboarding, API setup, and customization per institution. | ₱5M avg per integration |
+| **Float Yield & Breakage** | Share in partner-managed float yield; income from unredeemed/expired vouchers under partner agreements. | 2–3% of float value annually |
 
 ### **Revenue Model Summary**
 
-**x-Change** operates a hybrid **B2B fintech model** combining **recurring** and **transaction-based** revenue streams.
+**x-Change** operates a hybrid **B2B fintech model** combining **recurring** and **transaction-based** revenue across three voucher types.
 
-Recurring income comes from **enterprise licensing** and **value-added service subscriptions**, while transactional income is driven by **per-disbursement fees**, **integration projects**, and **float yield participation** through partner EMIs and banks.
+The three-type model multiplies revenue surfaces:
+- **Redeemable** generates disbursement fees (the original revenue stream)
+- **Payable** adds collection fees — a new, high-volume stream from utilities, billers, gaming, and transport
+- **Settlement** adds envelope fees — a higher-margin stream from insurance, lending, and government contracts
 
-A small portion of income may also come from **breakage revenue** — the value of unredeemed or expired vouchers — as permitted under program and partner agreements.
+Recurring income from **enterprise licensing** and **value-added services** provides baseline predictability, while transactional income scales with adoption.
 
-This blended structure ensures **predictable cash flow** while maintaining full **regulatory compliance**.  
-All escrowed funds remain within **licensed financial institutions**, with **x-Change** earning revenue only through service agreements, not through fund custody.
-
-As transaction volumes, institutional adoption, and program complexity increase, the platform’s **recurring and data-driven income naturally scale**.---
+All escrowed funds remain within **licensed financial institutions**. x-Change earns revenue only through service agreements, not fund custody.
 
 ## **5. Traction & Milestones**
 
 | Phase | Period | Milestone |
 |--------|---------|------------|
-| **Pre-Operating Stage** | Q4 Pre-Launch | Investor roadshow, finalization of capitalization, legal structuring of **x-Change Philippines, Inc.**, and execution of IP licensing agreement with **3neti R&D OPC**. |
-| **Foundation & Setup** | Q1 Y1 – Q2 Y1 | Core team recruitment, platform hardening, regulatory review with partner EMIs and banks, and pilot program design. |
-| **Pilot Implementation** | Q3 Y1 | Internal pilot with one bank partner and one NGO/government agency; field testing of QR/SMS voucher issuance and redemption workflows. |
-| **Public Pilot & Proof of Concept** | Q4 Y1 | Full-scale pilot rollout with at least two institutional partners; establish baseline transaction throughput and compliance audits. |
-| **Commercial Launch** | Q1 Y2 | Market launch with multi-sector adoption (banks, NGOs, enterprise clients); activation of revenue-sharing agreements and program dashboards. |
-| **Scale-Up & Optimization** | Q2 Y2 – Q4 Y2 | Reach **500 000 – 1 million transactions per month**; expand to additional banks and EMIs; integrate advanced programmability modules and analytics. |
-| **National Expansion** | Y3 | Deployment across all major EMIs and regional banks; inclusion in government and donor digital disbursement frameworks. |
-| **Regional / ASEAN Expansion** | Post-Y3 | Explore cross-border adaptation and strategic partnerships in neighboring markets under similar regulatory environments. |
-| **Profitability & Sustained Growth** | Post-Y3 + | Achieve break-even and recurring profitability through licensing renewals, value-added services, and float-based revenue sharing. |
+| **Pre-Operating Stage** | Q4 Pre-Launch | Investor roadshow, capitalization, legal structuring of **x-Change Philippines, Inc.**, IP licensing agreement with **3neti R&D OPC**. |
+| **Foundation & Setup** | Q1 Y1 – Q2 Y1 | Core team recruitment; 3neti begins 8-workstream platform build; federation infrastructure and Settlement Envelope package in development; regulatory review with partner EMIs and banks. |
+| **Pilot — Redeemable** | Q3 Y1 | Internal pilot: redeemable voucher disbursement with one bank partner and one government/NGO agency. QR/SMS issuance and multi-channel redemption validated. |
+| **Pilot — Payable + Settlement** | Q4 Y1 | Payable voucher pilot with one utility partner; settlement voucher pilot with one insurance or lending partner. Settlement Envelope evidence gating validated end-to-end. |
+| **Commercial Launch** | Q1 Y2 | Market launch across all three voucher types; revenue-sharing agreements activated; multi-institution federation protocol live. |
+| **Scale-Up & Optimization** | Q2 Y2 – Q4 Y2 | Reach **500K–1M transactions per month** across three types; expand to additional banks, EMIs, utilities, and insurers; deploy YAML driver library for new verticals. |
+| **National Expansion** | Y3 | Deployment across all major EMIs and regional banks; PhilHealth/government settlement integration; inclusion in government digital disbursement frameworks. |
+| **Regional / ASEAN Expansion** | Post-Y3 | Cross-border adaptation; strategic partnerships in neighboring markets; ASEAN licensing pilots. |
 
 **Execution Roadmap Summary**  
 This phased roadmap de-risks execution by validating each stage before capital escalation.  
@@ -176,23 +213,24 @@ By the end of Year 3, the platform is expected to achieve nationwide coverage, s
 ## **6. Competitive Landscape**
 
 **Market Positioning**  
-**x-Change** operates in a Blue Ocean space between traditional remittance networks and modern digital wallets.  
-Its closest analogues are *over-the-counter remittance systems* such as **LBC, Palawan Express, Western Union, and MLhuillier**, where senders issue codes for physical redemption.  
-Unlike these legacy services, **x-Change** digitizes the entire process — replacing paper receipts and manual validation with programmable, auditable digital vouchers that can be redeemed through banks, e-wallets, or agents.
+**x-Change** operates as a **scheme layer** — not a wallet, not a remittance service, not a payment gateway. The closest structural analogue is **Visa/Mastercard**: a protocol that enforces rules, routes messages, and ensures auditability while institutions retain local control of issuance and settlement.  
+No existing player covers disbursement, collection, and conditional settlement through a single programmable instruction framework.
 
 **Comparative Overview**
 
-| Category | Core Model | Weakness | x-Change Advantage |
-|-----------|-------------|-----------|--------------------|
-| **Traditional Remittance Centers** | OTC cash payouts and paper-based voucher codes | Manual processing, limited auditability, high operational cost | Fully digital, API-based disbursement and redemption with built-in audit trails |
-| **Bank Demand Drafts / Manager’s Checks** | Paper instruments requiring in-branch verification | Slow, non-programmable, difficult to trace | Instant, programmable digital equivalent with expiry and metadata controls |
-| **Traveler’s Checks / Gift Certificates** | Prepaid instruments with restricted use | Obsolete formats, poor interoperability | Digital, multi-channel, compliance-ready vouchers usable across networks |
-| **E-wallets (GCash, Maya, GrabPay)** | Closed push-based ecosystems | Limited interoperability, captive users | Open, account-agnostic rails that connect all e-wallets and banks |
-| **x-Change (Proposed Category)** | Programmable digital voucher and disbursement infrastructure | — | Blue Ocean model enabling pull-based, auditable, and inclusive transactions |
+| Attribute | Checks / Drafts | E-Wallets | Bank Transfers | Pay Code |
+|-----------|----------------|-----------|----------------|----------|
+| Nature | Paper instruction | Closed ecosystem | Push-based | Digital bearer instruction |
+| Value embedded | Pre-funded | Stored value | Direct debit | None — resolved at execution |
+| Custody | Implicit | Wallet provider | Bank | None — issuer retains |
+| Interoperability | Low | Low | Medium | High — rail-agnostic |
+| Recipient flexibility | Low | None | None | Full — any channel |
+| Programmability | None | Limited | None | Full — rules, expiry, gates, evidence |
+| Collection support | No | Wallet-only | Limited | Yes — payable Pay Code |
+| Conditional settlement | No | No | No | Yes — Settlement Envelope |
 
 **Strategic Insight**  
-Rather than competing with wallets or remittance firms, **x-Change** provides the **infrastructure layer** that can empower them to modernize disbursement.  
-Banks, EMIs, and payment providers can integrate **x-Change** to extend their reach into unbanked and cash-first markets—creating collaboration, not disruption.
+Pay Code is not a wallet competitor or a remittance alternative. It is the **infrastructure layer** that connects wallets, banks, insurers, and government agencies through a unified instruction framework. Institutions retain custody, compliance, and customer relationships. x-Change provides the protocol.
 
 ---
 
@@ -298,19 +336,35 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 
 | **Category** | **Amount (₱ Million)** | **% of Total** | **Description / Key Components** |
 |---------------|-------------------------|----------------|----------------------------------|
-| **Platform Development & Capital Expenditure** | 34 | 34 % | Core system build, security hardening, IP registration, hardware & software tools |
+| **Platform Development — 3neti R&D Technology Contract** | 30 | 30 % | 8-workstream platform build: core voucher engine, Settlement Envelope, Form Flow, payment gateways, federation/security, PWA/kiosk, API layer, IP registration |
 | **Operating Expenses (Pre-Break-Even)** | 23 | 23 % | Salaries, marketing, compliance, cloud infrastructure, and administrative overhead for first 24 months |
 | **Working Capital & Transaction Float** | 31 | 31 % | Liquidity buffer for voucher settlements, receivables, and deferred revenue management |
 | **Regulatory & Legal Reserves** | 4 | 4 % | Licensing, BSP & AMLC compliance, audit, insurance, contingency |
-| **Contingency & Strategic Reserve** | 8 | 8 % | Cushion for inflation, partner integration delays, or market acceleration |
+| **Contingency, Cloud & Strategic Reserve** | 12 | 12 % | Cloud infrastructure, hardware/software tools, inflation cushion, partner integration delays, or market acceleration |
 | **Total Capitalization** | **₱ 100 M** | **100 %** | Fully subscribed in this round |
 
 ---
 
 ### **Funding Utilization Rationale**
 
-- **Platform Development (₱ 34 M):**  
-  Covers outsourced software engineering to 3neti R&D OPC, cloud infrastructure, cybersecurity, and IP registration. Amortized over 18 months.
+- **Platform Development — 3neti R&D Technology Contract (₱ 30 M):**  
+  The ₱30M is not a simple outsourcing fee — it capitalizes the construction of a **patent-pending, federation-ready fintech infrastructure** comprising 8 interdependent workstreams with 50+ database tables, 100+ API endpoints, and a composable driver system. 3neti R&D OPC, as the IP creator and sole entity with deep platform knowledge, is the only contractor capable of delivering this within the required timeline while maintaining architectural integrity and IP coherence.
+
+  **8-Workstream Breakdown:**
+
+  | WS | Scope | Amount |
+  |----|-------|--------|
+  | WS-1: Core Voucher Engine | Three-type model, post-generation/redemption pipelines, dynamic pricing, campaign system | ₱5.0M |
+  | WS-2: Settlement Envelope | Envelope state machine (10 states), YAML driver system, driver composition, checklist/signals/gates, contribution tokens, audit logging | ₱6.0M |
+  | WS-3: Form Flow System | Session-based state management, YAML transformation, 5 handler packages (form, KYC, location, selfie, signature) | ₱4.0M |
+  | WS-4: Payment Gateway & Wallet | Multi-gateway abstraction, system wallet, balance reconciliation, disbursement pipeline | ₱3.5M |
+  | WS-5: Federation & Security | Cryptographic licensing, dual-signature verification, clearing attestation logs, namespace isolation, penetration testing, SOC 2 readiness | ₱5.5M |
+  | WS-6: PWA / Kiosk & Frontend | Kiosk skin YAML architecture, PWA with service worker, voucher show page, portal, QR generation/scanning | ₱2.5M |
+  | WS-7: API & Notifications | RESTful API v1, webhook system, SMS/email integration, Postman suites, Sanctum authentication | ₱1.5M |
+  | WS-8: IP Registration & Docs | 3 patent filings, trademark registration, copyright registration, BSP/AMLC compliance documentation | ₱2.0M |
+  | **Total** | | **₱30.0M** |
+
+  Amortized over 18 months, milestone-gated. Plus recurring R&D (OPEX): ₱4.2M/year (₱350K/month) for ongoing maintenance, feature updates, driver development, and security patches.
 
 - **Operating Expenses (₱ 23 M):**  
   Supports a 14-person core team across executive, business development, marketing, technology operations, and compliance. Includes initial marketing and partner-onboarding costs.
@@ -352,13 +406,15 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 | **Y4** | 27.0 | 154 | 47.8 | Operating leverage and expansion |
 | **Y5** | 36.0 | 231 | 83.2 | Mature phase with ~50 % EBITDA margin |
 
-**Financial Outlook Summary**  
+**Financial Outlook Summary**
+
 The model reflects a disciplined growth trajectory:
 - Controlled burn in Year 1 for platform development.
 - Rapid volume acceleration through partner onboarding in Year 2.
 - Sustained profitability from Year 3 onward, driven by transaction scale and value-added services.
 - No additional equity required before break-even; liquidity remains positive through Year 5 with cumulative cash ≈ ₱167 million.
 - Returns align with infrastructure-fintech peers, confirming a **capital-efficient and high-margin** business model.
+
 ---
 
 ## **9. Risks & Mitigation**
@@ -399,7 +455,7 @@ The model reflects a disciplined growth trajectory:
 ## **11. Exit Strategy**
 
 **Strategic Liquidity Options**  
-x-Change is designed as a scalable fintech infrastructure play — making it naturally attractive to **banks, EMIs, payment gateways, and technology groups** seeking programmable disbursement capability.  
+x-Change is designed as a scalable fintech infrastructure play — making it naturally attractive to **banks, EMIs, payment gateways, and technology groups** seeking programmable disbursement, collection, and settlement capability.
 Potential acquirers include digital banks, API banking providers, or regional fintech consolidators expanding across ASEAN.
 
 **5-Year Target**  

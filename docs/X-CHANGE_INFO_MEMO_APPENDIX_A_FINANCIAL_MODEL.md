@@ -7,7 +7,7 @@
 The x-Change financial model demonstrates a **capital-efficient, high-margin fintech infrastructure business** achieving profitability within two years and self-funded scalability thereafter.  
 A ₱100 million equity infusion fully capitalizes the venture through break-even and nationwide rollout, with no additional financing required before Year 3.  
 By Year 5, the company sustains **₱231 million annual revenue**, **₱83 million net profit**, and cumulative retained earnings exceeding ₱130 million—delivering a **21 % IRR**, **31 % average ROIC**, and **≈8–11× exit valuation multiple** typical of regional fintech peers.  
-The model confirms that x-Change can combine social impact (financial inclusion and transparency) with institutional-grade profitability.
+The model reflects the expanded **three-voucher-type architecture** (redeemable, payable, settlement) and an addressable market of **₱8+ trillion** across disbursement, collection, and conditional settlement verticals.
 
 ---
 
@@ -84,14 +84,17 @@ Pricing will remain adaptive as the ecosystem matures:
 ### 1. Revenue Drivers
 
 | Assumption | Basis / Unit | Description / Rationale |
-|-------------|--------------|--------------------------|
-| **Average Disbursement Fee** | ₱5 per transaction | Derived from market benchmark analysis (see *Pricing Model & Rationale*); represents optimal midpoint between cost savings and profitability. |
-| **Average Direct Cost per Disbursement** | ₱2.50 per transaction | Includes cloud, API, and operational costs; maintains ~50% gross margin. |
-| **Transaction Growth Curve** | Monthly / Annual | Starts at 100,000 tx/month (Year 1) scaling to 1.5M tx/month (Year 3); assumes phased institutional onboarding. |
-| **Number of Institutional Clients** | Count | 3 clients by Year 1 → 10 by Year 3 (banks, EMIs, NGOs, enterprise partners). |
-| **Add-on Services Utilization** | % of Total Revenue | 15–25%; includes analytics, feedback capture, and branded landing pages. |
-| **Licensing Income** | ₱ per client per year | ₱500,000–₱1,000,000 per enterprise license; recurring annual revenue. |
-| **Breakage & Float Yield** | % of Transaction Value | 2–3%; income from unredeemed vouchers and float participation with partner EMIs/banks. |
+|-------------|--------------|---------------------------|
+| **Average Transaction Fee (Redeemable)** | ₱5 per transaction | Pull-based disbursement fee; derived from market benchmark analysis (see Pricing Model & Rationale). |
+| **Average Transaction Fee (Payable)** | ₱4 per transaction | Collection fee; lower per-unit due to higher expected volume (utilities, billers, gaming). |
+| **Average Envelope Fee (Settlement)** | ₱10–₱50 per envelope | Priced by complexity: number of gates, documents, and signals required. Higher margin stream. |
+| **Average Direct Cost per Transaction** | ₱2.50 per transaction | Cloud, API, and operational costs; maintains ~50% gross margin on disbursement. |
+| **Transaction Growth Curve** | Monthly / Annual | Starts at 100K tx/month (Year 1) scaling to 1.5M tx/month (Year 3) across all three types. |
+| **Voucher Type Mix (Year 3)** | % of volume | Redeemable 55%, Payable 35%, Settlement 10%. Settlement is lower volume but higher margin. |
+| **Number of Institutional Clients** | Count | 3 clients by Year 1 → 15 by Year 3 (banks, EMIs, insurers, utilities, government agencies). |
+| **Enterprise Licensing** | ₱ per client per year | ₱500K–₱1M per institutional partner; recurring annual revenue. |
+| **Value-Added Services** | % of Total Revenue | 15–25%; analytics, branded portals, feedback capture, kiosk skins. |
+| **Float Yield & Breakage** | % of Transaction Value | 2–3%; income from unredeemed vouchers and float participation with partner institutions. |
 
 ### 2. Operating Expenses
 
@@ -116,13 +119,35 @@ These are primarily non-recurring costs focused on technology development, licen
 
 | Category | Description | Estimated Cost (₱ M) | Notes |
 |-----------|--------------|----------------------|-------|
-| **Platform Development** | Core platform build, integrations, and security hardening | 30.0 | Outsourced to 3neti R&D OPC under IP contribution and service agreement |
-| **Equipment & Software Licenses** | Computers, developer tools, analytics, cybersecurity suites | 2.0 | Includes 12-month subscriptions for AWS/DigitalOcean, Slack, Atlassian, etc. |
-| **Office Setup & Contingency** | Furniture, fixtures, small equipment, and setup costs | 1.0 | Includes initial office fit-out and contingency for inflation |
-| **IP Registration & Legal Fees** | Patent/trademark filing, documentation, regulatory submissions | 1.0 | Covers 3-year registration costs with IPOPHL and legal support |
+| **Platform Development — 3neti R&D Technology Contract** | 8-workstream build: core voucher engine, Settlement Envelope, Form Flow, payment gateways, federation/security, PWA/kiosk, API layer, IP registration | 30.0 | Milestone-gated over 18 months (see detailed breakdown below) |
+| **Equipment & Software Licenses** | Computers, developer tools, analytics, cybersecurity suites | 2.0 | AWS/DigitalOcean, Slack, Atlassian, etc. |
+| **Office Setup & Contingency** | Furniture, fixtures, small equipment, and setup costs | 1.0 | Initial office fit-out |
+| **IP Registration & Legal Fees** | Patent/trademark filing, documentation, regulatory submissions | 1.0 | Included in WS-8 scope; covers 3-year IPOPHL costs |
 
 **Total Estimated Capital Expenditure:** ₱34 M  
-Amortized over the first 18 months of operation, with most costs incurred during the pre-operating and pilot stages (Y0–Y1).
+Amortized over the first 18 months of operation.
+
+---
+
+#### **3neti R&D Technology Contract — 8-Workstream Breakdown (₱30M)**
+
+The ₱30M platform development allocation is contracted to **3neti Research & Development OPC**, the IP creator and patent-pending technology developer. This is not a simple outsourcing fee — it capitalizes the construction of a **federation-ready fintech infrastructure** comprising 8 interdependent workstreams with 50+ database tables, 100+ API endpoints, and a composable driver system.
+
+| WS | Workstream | Key Deliverables | Amount (₱M) |
+|----|-----------|-----------------|-------------|
+| 1 | **Core Voucher Engine & Three-Type Architecture** | Three-type model (redeemable, payable, settlement), post-generation/redemption pipelines, dynamic pricing engine (InstructionCostEvaluator), campaign system with batch generation, voucher metadata schema | 5.0 |
+| 2 | **Settlement Envelope Package** | Envelope state machine (10 states), YAML driver system with loading/validation/versioning, driver composition engine (`extends` directive, multi-parent inheritance), checklist system (4 item kinds, 5 statuses, 3 review modes), gate evaluation engine (boolean parser, context computation), attachment management, signal system (integration + decision signals), payload versioning, contribution token system, comprehensive audit logging, 7 database migrations | 6.0 |
+| 3 | **Form Flow System** | Form Flow Manager (session-based state management), YAML driver transformation engine, template processor (Handlebars-style), 5 handler packages (form, KYC/HyperVerge, location/GPS, selfie/camera, signature/pad), two-phase variable resolution, named step references | 4.0 |
+| 4 | **Payment Gateway & Wallet Infrastructure** | Multi-gateway abstraction (Netbank, Omnipay), system wallet architecture (transfer-based funding), balance reconciliation service (SAFE/WARNING/CRITICAL levels), disbursement pipeline with fraud checks and retry logic, InstaPay/PesoNet readiness | 3.5 |
+| 5 | **Federation Infrastructure & Security Hardening** | Cryptographic licensing system, dual-signature voucher verification, clearing attestation logs (shared meta-ledger), per-institution namespace isolation, field-level encryption (AES-256/TLS 1.3), immutable log chain, OAuth 2.1/mTLS API security, penetration testing program, independent security audit, SOC 2 Type I readiness, incident response & DR protocols | 5.5 |
+| 6 | **PWA / Kiosk & Frontend Systems** | Kiosk skin YAML architecture (three-level override hierarchy), PWA with service worker (offline-first), voucher show page with full envelope integration, portal supporting three voucher types, QR generation/scanning, external contribution page, Vue 3 + TypeScript + Tailwind component library | 2.5 |
+| 7 | **API Layer & Notification Infrastructure** | RESTful API v1 (voucher generation, redemption, envelope management, contribution links, signal toggles), webhook notification system, SMS integration (EngageSpark), email templates with Handlebars rendering, Postman collection suite, Laravel Sanctum authentication | 1.5 |
+| 8 | **IP Registration, Documentation & Certification** | Patent filing #1 (Pay Code framework), Patent filing #2 (Settlement Envelope), Patent filing #3 (Voucher orchestration engine), trademark registration ("x-Change", "Pay Code"), copyright registration (source code, architecture docs, driver specs), BSP/AMLC compliance documentation | 2.0 |
+| | **Total 3neti CapEx** | | **30.0** |
+
+**Recurring R&D (OPEX):** ₱4.2M/year (₱350K/month) for ongoing maintenance, feature updates, driver development, security patches, and partner integration support.
+
+**Investor rationale:** The ₱30M capitalizes a **patent-pending, federation-ready fintech infrastructure** that serves as the foundation for all three voucher types and the entire Pay Code ecosystem. 3neti R&D OPC, as the IP creator and sole entity with deep platform knowledge, is the only contractor capable of delivering this within the required timeline while maintaining architectural integrity and IP coherence. The milestone-gated structure ensures capital is released only against verified deliverables.
 
 ---
 
@@ -186,13 +211,18 @@ Sensitivity levers focus on revenue volume, pricing, and expense growth—key de
 
 | **Item** | **Year 1** | **Year 2** | **Year 3** | **Year 4** | **Year 5** | **Notes / Basis** |
 |-----------|-------------|-------------|-------------|-------------|-------------|-------------------|
-| **Transactions (M)** | 1.2 | 9.0 | 18.0 | 27.0 | 36.0 | Scaling from 100k → 1.5M tx/mo by Y3; 2M tx/mo by Y5 |
-| **Average Fee / tx (₱)** | 5.00 | 5.00 | 5.00 | 4.75 | 4.50 | Slight volume-based discount from Y4 |
-| **Disbursement Fees** | 6.0 | 45.0 | 80.0 | 128.0 | 194.0 | Core revenue driver |
-| **Licensing Income** | 1.5 | 3.0 | 5.0 | 7.0 | 9.0 | ₱500K–₱1M per institutional client |
-| **Value-Added Services** | 0.5 | 4.0 | 10.0 | 16.0 | 24.0 | Usage-based programmable features |
-| **Float Yield & Breakage** | 0.2 | 1.0 | 2.0 | 3.0 | 4.0 | 2–3% of voucher float value |
-| **Total Revenue** | **8.2** | **53.0** | **97.0** | **154.0** | **231.0** | CAGR ≈ 120% |
+| **Total Transactions (M)** | 1.2 | 9.0 | 18.0 | 27.0 | 36.0 | Scaling from 100K → 3M tx/mo by Y5 |
+| *— Redeemable (disbursement)* | 1.0 | 5.5 | 9.9 | 13.5 | 16.2 | 55% → 45% mix as payable scales |
+| *— Payable (collection)* | 0.2 | 2.5 | 6.3 | 10.8 | 16.2 | Utilities, gaming, transport ramp |
+| *— Settlement (envelopes)* | — | 1.0 | 1.8 | 2.7 | 3.6 | 10% of volume; higher margin |
+| **Transaction Fees (Redeemable)** | 5.0 | 27.5 | 49.5 | 64.1 | 72.9 | ₱5 avg fee |
+| **Transaction Fees (Payable)** | 0.8 | 10.0 | 25.2 | 43.2 | 64.8 | ₱4 avg fee |
+| **Settlement Envelope Fees** | — | 3.5 | 9.0 | 16.2 | 28.8 | ₱20 avg per envelope |
+| **Enterprise Licensing** | 1.5 | 5.0 | 7.5 | 10.0 | 13.0 | ₱500K–1M per client; growing client base |
+| **Value-Added Services** | 0.5 | 4.0 | 10.0 | 16.0 | 24.0 | Analytics, portals, feedback, kiosk skins |
+| **Integration Projects** | 0.2 | 2.0 | 3.0 | 2.0 | 1.5 | One-time onboarding; declines as base stabilizes |
+| **Float Yield & Breakage** | 0.2 | 1.0 | 2.0 | 3.0 | 4.0 | 2–3% of float value |
+| **Total Revenue** | **8.2** | **53.0** | **106.2** | **154.5** | **209.0** | CAGR ≈ 115% |
 
 ---
 

@@ -1,4 +1,4 @@
-site_name: x-Change - Information Memorandum
+site_name: x-Change — Pay Code Orchestration Platform
 
 theme:
   name: material
@@ -14,8 +14,8 @@ plugins:
   - with-pdf:
       author: 'Lester B. Hurtado'
       copyright: 'Copyright © 2025 3neti R&D OPC'
-      cover_title: 'x-Change Information Memorandum'
-      cover_subtitle: 'A Fintech Platform for Financial Inclusion and Digital Disbursement'
+      cover_title: 'x-Change — Pay Code Orchestration Platform'
+      cover_subtitle: 'The Pay Code Orchestration Platform for Disbursement, Collection & Settlement'
       cover_logo: null
       back_cover: true
       toc_title: 'Table of Contents'
@@ -55,6 +55,7 @@ extra_javascript:
 
 nav:
   - Home: X-CHANGE_WHITE_PAPER.md
+  - Use Cases: X-CHANGE_USE_CASES.md
   - Frequently Asked Questions: X-CHANGE_FAQ.md
   - Information Memorandum: X-CHANGE_INFO_MEMO.md
   - Appendix A - Financial Model: X-CHANGE_INFO_MEMO_APPENDIX_A_FINANCIAL_MODEL.md

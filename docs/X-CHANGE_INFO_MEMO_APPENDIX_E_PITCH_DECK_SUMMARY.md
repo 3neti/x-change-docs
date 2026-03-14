@@ -5,19 +5,21 @@
 
 ## **E.1 Elevator Pitch**
 
-**x-Change** is a programmable digital voucher platform that flips traditional money transfer on its head — letting the *recipient* decide where and how to redeem funds.
+**x-Change** is the orchestration platform behind **Pay Code** — a rail-agnostic payment instruction framework with three transaction primitives:
 
-Instead of pushing money into a fixed account, institutions **escrow the funds and issue a QR or SMS-based voucher code**.  
-The recipient then **pulls the funds** into any preferred destination — bank, e-wallet, or OTC agent — at their time and convenience.
+- **Redeemable** — institution disburses; recipient pulls funds into any channel
+- **Payable** — payer presents code; funds flow to collector via any wallet/bank
+- **Settlement** — evidence-gated conditional execution via Settlement Envelope
 
-We’re **not another wallet**; we provide the **programmable, account-agnostic disbursement layer** powering banks, EMIs, and enterprises.
+Pay Code is to digital payments what the URL was to the internet: a **universal addressing layer** that lets existing infrastructure do the work. We're not another wallet — we're the **scheme layer** connecting wallets, banks, insurers, and government agencies.
 
 **Key Attributes**
-- App-less for recipients
+- Three primitives covering disbursement, collection, and conditional settlement
+- App-less for recipients (SMS + QR first-class)
 - KYC/AML-compliant for issuers
-- Secure, auditable, and regulator-ready
-- Works offline or printed
-- Fully API-driven and white-label-ready
+- Programmable Settlement Envelope for insurance, lending, and government contracts
+- Fully API-driven with YAML-configurable verticals
+- Patent-pending IP across 5 invention claims
 
 ---
 
@@ -30,7 +32,7 @@ We’re **not another wallet**; we provide the **programmable, account-agnostic 
 | Lack of transparency in aid & incentive programs | Weak audit trails, fraud & leakage | Immutable metadata & redemption logs |
 | Limited interoperability between banks & wallets | Closed ecosystems | Account-agnostic API layer for all rails |
 
-**Addressable Market:** ₱ 6 trillion across financial disbursements, social aid, and loyalty ecosystems in the Philippines alone.
+**Addressable Market:** ₱ 8+ trillion across disbursement (₱2.5T), collection (₱2T+), settlement (₱1.3T+), and loyalty (₱200B+) ecosystems in the Philippines.
 
 ---
 
@@ -71,9 +73,11 @@ We’re **not another wallet**; we provide the **programmable, account-agnostic 
 
 | Stream | Basis | Illustration |
 |---------|--------|--------------|
-| **Disbursement Fees** | ₱ 5 / tx avg | 500 k tx / mo → ₱ 2.5 M monthly |
-| **Licensing Fees** | ₱ 0.5–1 M per year / institution | 10 partners ≈ ₱ 7 M / yr |
-| **Value-Added Modules** | ₱ 1–₱ 50 / event | Analytics, feedback, landing pages |
+| **Transaction Fees (Redeemable)** | ₱ 5 / tx avg | Disbursement — core stream |
+| **Transaction Fees (Payable)** | ₱ 4 / tx avg | Collection — utilities, gaming, transport |
+| **Settlement Envelope Fees** | ₱ 10–₱ 50 / envelope | Higher-margin — insurance, lending, government |
+| **Enterprise Licensing** | ₱ 0.5–1 M per year / institution | 15 partners ≈ ₱ 10 M / yr |
+| **Value-Added Services** | ₱ 1–₱ 50 / event | Analytics, portals, kiosk skins |
 | **Integration Projects** | ₱ 5 M avg per client | Onboarding & customization |
 | **Float Yield / Breakage** | 2–3 % of voucher value | Shared with EMIs / banks |
 
@@ -121,13 +125,14 @@ We’re **not another wallet**; we provide the **programmable, account-agnostic 
 
 ## **E.9 Talking Points for Investor Briefings**
 
-1. **Market Validation:** ₱ 6 T addressable market with government and NGO demand.
-2. **Defensible IP:** proprietary voucher orchestration and metadata routing.
-3. **Revenue Visibility:** hybrid licensing + transactional streams.
-4. **Regulatory Alignment:** BSP VAS compliant; x-Change is infrastructure, not financial custodian.
-5. **Impact + Profit:** bridges financial inclusion and auditability for public funds.
-6. **ESG Fit:** supports UN SDG 9 and 16 through digital infrastructure and transparency.
-7. **Exit Path:** Strategic acquisition or Series B liquidity within 5 years.
+1. **Market Validation:** ₱ 8T+ addressable market across disbursement, collection, and settlement.
+2. **Three Primitives, One Platform:** Redeemable + Payable + Settlement covers the complete transaction surface.
+3. **Defensible IP:** 5 patent-pending inventions including Settlement Envelope and driver composition.
+4. **Revenue Multiplier:** Three voucher types multiply revenue surfaces beyond disbursement alone.
+5. **Regulatory Alignment:** BSP VAS compliant; Pay Code is instruction reference layer, not financial custodian.
+6. **Impact + Profit:** bridges financial inclusion and auditability for public funds.
+7. **ESG Fit:** supports UN SDG 9 and 16 through digital infrastructure and transparency.
+8. **Exit Path:** Strategic acquisition or Series B liquidity within 5 years.
 
 ---
 

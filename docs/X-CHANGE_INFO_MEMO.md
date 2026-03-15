@@ -361,7 +361,8 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 ### **Technology Origin & Intellectual Property Contribution**
 
 The **x-Change architecture** was conceived and developed by **3neti Research & Development OPC** as part of its internal fintech research program.  
-The core design principles, protocol definitions, and prototype components of the platform have already been established prior to the capitalization of **Open Disbursement Technologies Inc. (ODTI)**.
+The core design principles, protocol definitions, and prototype components of the platform have already been established prior to the capitalization of **Open Disbursement Technologies Inc. (ODTI)**.  
+The x-Change architecture has been under conceptual and technical development since **2023**, as part of 3neti R&D’s internal fintech infrastructure research program.
 
 These include early implementations of:
 
@@ -403,6 +404,18 @@ This structure ensures that the venture benefits from the **inventor’s direct 
 
   The eight workstreams listed below represent **implementation milestones required to bring these systems into full production readiness**.
 
+  The complete system represents a **large-scale institutional software platform** rather than a conventional application.
+
+  The production implementation is expected to include:
+
+  - more than **50 relational database tables** supporting voucher lifecycle management, settlement envelopes, workflow states, compliance records, and audit logging
+  - over **100 API endpoints** covering issuer integrations, redemption routing, envelope execution, federation services, and institutional notifications
+  - multiple **state-machine-driven subsystems** governing voucher lifecycle transitions, settlement envelope execution, and compliance workflows
+  - secure **multi-tenant architecture** allowing banks, EMIs, government agencies, and enterprise issuers to operate within isolated namespaces
+  - high-assurance **security and audit infrastructure** including cryptographic verification, immutable event logs, and regulatory monitoring instrumentation
+
+  This engineering scope places the x-Change platform in the category of **financial infrastructure software**, rather than a typical startup application.
+
   The production build is organized into **eight engineering workstreams**, each representing a major subsystem of the x-Change platform.  
   These workstreams are not independent products but **integrated components of a unified fintech infrastructure layer**, collectively forming the Pay Code orchestration network.
 
@@ -418,14 +431,14 @@ This structure ensures that the venture benefits from the **inventor’s direct 
 
   | WS | Scope | Amount |
   |----|-------|--------|
-  | WS-1: Core Voucher Engine | Three-type voucher orchestration engine supporting redeemable, payable, and settlement Pay Codes; lifecycle state management, routing pipelines, pricing logic, and institutional campaign configuration. | ₱5.0M |
-  | WS-2: Settlement Envelope | Implementation of the **Settlement Envelope Protocol**, including envelope state machines, YAML driver architecture, composable driver inheritance, evidence checklists, approval signals, conditional execution gates, and immutable audit logging. | ₱6.0M |
-  | WS-3: Form Flow System | Dynamic **compliance workflow engine** supporting multi-step institutional input flows including KYC capture, document submission, geolocation verification, selfie validation, and digital signatures using YAML-driven configuration. | ₱4.0M |
-  | WS-4: Payment Gateway & Wallet | Multi-rail payment gateway abstraction enabling routing across banks, EMIs, and cash-out agents; system wallet management, transaction reconciliation, and settlement routing. | ₱3.5M |
-  | WS-5: Federation & Security | Institutional **federation and security infrastructure**, including cryptographic licensing, dual-signature verification, clearing attestation logs, namespace isolation for participating institutions, and security hardening. | ₱5.5M |
-  | WS-6: PWA / Kiosk & Frontend | Device-agnostic transaction interface including PWA architecture, kiosk deployments, voucher display portals, QR generation/scanning, and configurable UI skins for institutional partners. | ₱2.5M |
-  | WS-7: API & Notifications | Institutional integration layer including RESTful API infrastructure, webhook notification system, SMS/email messaging gateways, authentication systems, and integration toolkits for partner institutions. | ₱1.5M |
-  | WS-8: IP Registration & Docs | Intellectual property protection and regulatory documentation, including patent filings, trademarks, copyright registrations, and preparation of compliance documentation required for institutional partnerships. | ₱2.0M |
+  | WS-1: Core Voucher Engine | Three-type voucher orchestration engine supporting redeemable, payable, and settlement Pay Codes; lifecycle state management, routing pipelines, pricing logic, campaign configuration, voucher metadata management, and issuer authorization controls. | ₱5.0M |
+  | WS-2: Settlement Envelope | Implementation of the **Settlement Envelope Protocol**, including envelope state machines with multiple lifecycle states, YAML driver architecture, composable driver inheritance, evidence checklists, approval signals, conditional execution gates, and immutable audit logging. | ₱6.0M |
+  | WS-3: Form Flow System | Dynamic **compliance workflow engine** supporting multi-step institutional input flows including KYC capture, document submission, geolocation verification, selfie validation, digital signatures, session orchestration, and dynamic validation pipelines. | ₱4.0M |
+  | WS-4: Payment Gateway & Wallet | Multi-rail payment gateway abstraction enabling routing across banks, EMIs, and cash-out agents, including routing adapters for InstaPay, PesoNet, wallet APIs, and over-the-counter cash-out channels, with system wallet reconciliation and settlement routing. | ₱3.5M |
+  | WS-5: Federation & Security | Institutional **federation and security infrastructure**, including cryptographic licensing, dual-signature verification, clearing attestation logs, namespace isolation for participating institutions, secure inter-institution message exchange, and platform security hardening. | ₱5.5M |
+  | WS-6: PWA / Kiosk & Frontend | Device-agnostic transaction interface including progressive web application architecture, offline-capable service workers, kiosk deployments, voucher display portals, QR generation and scanning, and configurable UI skins for institutional partners. | ₱2.5M |
+  | WS-7: API & Notifications | Institutional integration layer including versioned REST API infrastructure, webhook notification services, SMS/email messaging gateways, authentication systems, and integration toolkits supporting institutional onboarding. | ₱1.5M |
+  | WS-8: IP Registration & Docs | Intellectual property protection and regulatory documentation including patent filings covering Pay Code protocol and Settlement Envelope architecture, trademarks, copyright registrations, and compliance documentation required for institutional partnerships. | ₱2.0M |
   | **Total** | | **₱30.0M** |
 
   This development structure ensures that the platform is built as a **cohesive institutional infrastructure layer**, rather than a collection of independent applications.  

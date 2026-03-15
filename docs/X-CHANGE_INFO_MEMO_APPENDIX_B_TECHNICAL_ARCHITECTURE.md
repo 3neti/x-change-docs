@@ -468,7 +468,7 @@ x-Change is engineered for **high availability**, **business continuity**, and *
     4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
     5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
 
-- The implementing company, **x-Change Philippines, Inc.**, operates under an **exclusive commercial license** from 3neti R&D OPC, ensuring clear separation between **intellectual property ownership** and **market execution rights**.
+- The implementing company, **Open Disbursement Technologies Inc. (ODTI)**, operates under an **exclusive commercial license** from 3neti R&D OPC, ensuring clear separation between **intellectual property ownership** and **market execution rights**.
 
 - All trademarks, logos, and visual assets associated with **x-Change** are filed or pending under the Intellectual Property Office of the Philippines (IPOPHL).
 

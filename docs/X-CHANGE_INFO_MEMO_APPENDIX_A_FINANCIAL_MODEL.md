@@ -173,7 +173,7 @@ The model assumes full equity funding in the initial round, with disciplined dep
 
 | Category | Description | Amount / Basis | Notes |
 |-----------|--------------|----------------|-------|
-| **Initial Equity Capitalization** | Founding investment by new investors for x-Change Philippines, Inc. | ₱100.0 M | 70% equity issued to investors; 30% carried equity to 3neti R&D OPC for IP contribution |
+| **Initial Equity Capitalization** | Founding investment by new investors for Open Disbursement Technologies Inc. (ODTI) | ₱100.0 M | 60% equity issued to investors; 30% carried equity to 3neti R&D OPC; 10% founding equity to Guido Delgado to 3neti R&D OPC for IP contribution |
 | **Equity Deployment Timeline** | Phased over 18–24 months | — | Drawdown aligned with platform build, regulatory compliance, and pilot rollout |
 | **Debt or Short-Term Facilities** | None in base case | — | Conservative approach—operations funded purely by equity to maintain low financial risk |
 | **Future Fundraising** | Optional post-break-even (Year 3+) | — | For regional expansion or working-capital scaling, not for sustaining operations |
@@ -584,7 +584,7 @@ This section consolidates the base, optimistic, and conservative cases to illust
 | **5-Year ROI** | 170 % | 153 % | 95 % | Nominal total return |
 | **Annualized IRR** | 23 % | 21 % | 16 % | Competitive regional fintech benchmarks: 15–25 % |
 | **Post-Money Valuation (5 yrs)** | ₱ 1.1 B | ₱ 0.9 B | ₱ 0.6 B | Based on 10× Year 5 earnings multiple |
-| **Investor Exit Value (70 % Stake)** | ₱ 770 M | ₱ 630 M | ₱ 420 M | Illustrative equity realization at exit |
+| **Investor Exit Value (60 % Stake)** | ₱ 660 M | ₱ 540 M | ₱ 360 M | Illustrative equity realization at exit |
 
 ---
 

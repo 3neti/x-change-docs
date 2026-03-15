@@ -1,11 +1,11 @@
 # **Appendix H – Key Personnel Incentive Plan**
-*Framework for executive and employee incentives for x-Change Philippines, Inc.*
+*Framework for executive and employee incentives for Open Disbursement Technologies Inc. (ODTI)*
 
 ---
 
 ## H.1 Purpose and Philosophy
 
-The **Key Personnel Incentive Plan (KPIP)** aligns the interests of leadership and employees with the long-term growth of **x-Change Philippines, Inc.**  
+The **Key Personnel Incentive Plan (KPIP)** aligns the interests of leadership and employees with the long-term growth of **Open Disbursement Technologies Inc. (ODTI)**  
 Its purpose is to attract, retain, and motivate individuals who will drive operational excellence, product innovation, and market expansion, while preserving **3neti R&D OPC’s** intellectual property and ensuring **investor value creation**.
 
 ---
@@ -16,7 +16,7 @@ Its purpose is to attract, retain, and motivate individuals who will drive opera
 |------------|--------------|----------------|-------|
 | **Base Salary** | Competitive compensation aligned with fintech market benchmarks. | Annual | ₱250k–₱400k/month for senior execs (CEO/COO) |
 | **Performance Bonus** | Cash bonus tied to operational KPIs and financial milestones. | Annual | Up to 15% of annual base salary |
-| **Equity Incentives (ESOP)** | Share options or phantom units under the Employee Incentive Pool. | 4-year vesting, 1-year cliff | 10% total pool post-Series A |
+| **Equity Incentives (ESOP)** | Share options or phantom units under the Employee Incentive Pool. | 4-year vesting, 1-year cliff | Board-approved pool post-Series A (see Appendix G) |
 | **Retention Bonus** | Lump-sum payable upon successful funding or exit event. | Event-based | Typically 6–12 months’ salary |
 | **Fringe Benefits** | Health insurance, car plan, training, and allowances. | Ongoing | Reviewed annually |
 
@@ -35,7 +35,7 @@ Its purpose is to attract, retain, and motivate individuals who will drive opera
 | **Unallocated Reserve** | **3–5%** | — | — | For future hires or retention adjustments |
 
 > All grants are made under the **Employee Stock Option Plan (ESOP)** approved by the Board and governed by the Shareholders’ Agreement.  
-> The pool shall not exceed **10% of fully-diluted shares**, unless expanded by **Reserved Matters** (§G.4.3).
+> The pool shall not exceed **5–10% of fully-diluted shares (subject to Board approval)**, unless expanded by **Reserved Matters** (§G.4.3).
 
 ---
 
@@ -87,7 +87,7 @@ Its purpose is to attract, retain, and motivate individuals who will drive opera
 
 1. **Employee Stock Option Plan (ESOP) Rules** – defining eligibility, exercise mechanics, and transfer restrictions.
 2. **Form of Option Grant Agreement** – outlining grant amount, vesting, and termination rules.
-3. **Confidentiality and IP Assignment Agreement** – ensuring IP remains with x-Change PH and 3neti R&D OPC.
+3. **Confidentiality and IP Assignment Agreement** – ensuring IP remains with ODTI and 3neti R&D OPC.
 4. **Board Resolution – ESOP Adoption** – authorizing the 10% pool and Committee authority.
 5. **Compensation & ESOP Committee Charter** – duties, approval workflow, and annual review requirements.
 
@@ -113,7 +113,7 @@ Its purpose is to attract, retain, and motivate individuals who will drive opera
 > Upon a Change of Control event, 50% of any unvested Options shall accelerate and become immediately exercisable.”
 
 > **Non-Compete and IP Ownership:**  
-> “The Optionee acknowledges that all inventions, source code, and documentation created in the course of employment shall belong exclusively to x-Change Philippines, Inc. or its Licensor (3neti R&D OPC). The Optionee shall not engage in any competing business for a period of 12 months following termination.”
+> “The Optionee acknowledges that all inventions, source code, and documentation created in the course of employment shall belong exclusively to Open Disbursement Technologies Inc. (ODTI) or its Licensor (3neti R&D OPC). The Optionee shall not engage in any competing business for a period of 12 months following termination.”
 
 ---
 

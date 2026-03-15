@@ -11,9 +11,9 @@
 This Information Memorandum presents an investment opportunity in **x-Change** — the orchestration platform behind **Pay Code**, a rail-agnostic payment instruction framework that enables institutions to disburse, collect, and settle funds across incompatible rails using three transaction primitives: **redeemable** (pull-based disbursement), **payable** (presentation-based collection), and **settlement** (evidence-gated conditional execution via Settlement Envelope).
 
 **Funding Requirement**  
-₱100 million to fully capitalize a new implementing company, **x-Change Philippines, Inc.**, which will operate **x-Change** under an exclusive, long-term Philippine license from **3neti Research & Development OPC** (the IP owner and patent-pending technology developer).  
+₱100 million to fully capitalize a new implementing company, **Open Disbursement Technologies Inc. (ODTI)**, which will operate **x-Change** under an exclusive, long-term Philippine license from **3neti Research & Development OPC** (the IP owner and patent-pending technology developer).  
 Investor proceeds will be used to subscribe to primary shares and fund capitalization.  
-As part of this licensing arrangement, **3neti R&D OPC** will be granted **30% carried equity** in **x-Change Philippines, Inc.** — representing the cost of the exclusive rights, technology, and intellectual property supporting the venture.
+As part of this licensing arrangement, **3neti R&D OPC** will be granted **30% carried equity** in **Open Disbursement Technologies Inc. (ODTI)** — representing the cost of the exclusive rights, technology, and intellectual property supporting the venture. An additional **10% founding equity** is allocated to **Guido Delgado**, Chairman & CEO, in recognition of his leadership role and institutional network.
 
 **Use of Funds Summary**
 
@@ -161,7 +161,7 @@ All components are **auditable, data-encrypted, and compliance-ready**, supporti
 4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
 5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
 
-All IP owned by **3neti Research & Development OPC** and exclusively licensed to x-Change Philippines, Inc.
+All IP owned by **3neti Research & Development OPC** and exclusively licensed to Open Disbursement Technologies Inc. (ODTI)
 
 ---
 
@@ -193,7 +193,7 @@ All escrowed funds remain within **licensed financial institutions**. x-Change e
 
 | Phase | Period | Milestone |
 |--------|---------|------------|
-| **Pre-Operating Stage** | Q4 Pre-Launch | Investor roadshow, capitalization, legal structuring of **x-Change Philippines, Inc.**, IP licensing agreement with **3neti R&D OPC**. |
+| **Pre-Operating Stage** | Q4 Pre-Launch | Investor roadshow, capitalization, legal structuring of **Open Disbursement Technologies Inc. (ODTI)**, IP licensing agreement with **3neti R&D OPC**. |
 | **Foundation & Setup** | Q1 Y1 – Q2 Y1 | Core team recruitment; 3neti begins 8-workstream platform build; federation infrastructure and Settlement Envelope package in development; regulatory review with partner EMIs and banks. |
 | **Pilot — Redeemable** | Q3 Y1 | Internal pilot: redeemable voucher disbursement with one bank partner and one government/NGO agency. QR/SMS issuance and multi-channel redemption validated. |
 | **Pilot — Payable + Settlement** | Q4 Y1 | Payable voucher pilot with one utility partner; settlement voucher pilot with one insurance or lending partner. Settlement Envelope evidence gating validated end-to-end. |
@@ -239,11 +239,11 @@ Pay Code is not a wallet competitor or a remittance alternative. It is the **inf
 | **Item** | **Details** |
 |-----------|--------------|
 | **Funding Sought** | ₱100 million equity investment |
-| **Implementing Company** | **x-Change Philippines, Inc.** – exclusive Philippine licensee of 3neti R&D OPC |
+| **Implementing Company** | **Open Disbursement Technologies Inc. (ODTI)** – exclusive Philippine licensee of 3neti R&D OPC |
 | **Intellectual Property Owner** | **3neti Research & Development OPC** – developer and licensor of x-Change technology |
-| **Equity Offered** | 70 % equity to investors; 30 % carried equity to 3neti R&D OPC in exchange for IP contribution and long-term license |
-| **Post-Money Valuation** | ₱143–₱150 million (implied 10× Year 5 EBITDA multiple discounted for execution risk) |
-| **Pre-Money Valuation** | ₱43–₱50 million |
+| **Equity Offered** | 60 % equity to investors; 30 % carried equity to 3neti R&D OPC (IP contribution); 10 % founding equity to Guido Delgado (Chairman & CEO) |
+| **Post-Money Valuation** | ₱167 million (implied 10× Year 5 EBITDA multiple discounted for execution risk) |
+| **Pre-Money Valuation** | ₱67 million |
 | **Use of Proceeds** | Platform development & CapEx (34 %), Operating Expenses (23 %), Working Capital (31 %), Regulatory & Legal (4 %), Contingency & Reserve (8 %) |
 | **Capital Structure** | 100 % primary issuance – proceeds directly fund company capitalization and growth (no debt) |
 | **Investor Rights** | Two board seats (5-member board), quarterly financial reporting, annual external audit, and governance-dashboard access |
@@ -256,20 +256,20 @@ Pay Code is not a wallet competitor or a remittance alternative. It is the **inf
 ---
 
 > **Summary:**  
-> Investors obtain a controlling 70 % equity position in a debt-free, high-margin fintech infrastructure company with verified path to profitability, defensible IP, and scalable recurring revenue.  
+> Investors obtain a majority 60 % equity position in a debt-free, high-margin fintech infrastructure company with verified path to profitability, defensible IP, and scalable recurring revenue.  
 > The ₱100 million capitalization fully funds x-Change through break-even, positioning it for regional expansion or trade-sale exit within five years.
 ## **Investment Offer Summary**
 
 x-Change is offering up to **₱100 million in equity participation** to institutional or strategic investors to fund its nationwide rollout and achieve operational profitability within 24 months.  
-The investment will be subscribed into **x-Change Philippines, Inc.**, a new operating entity that will hold exclusive commercialization rights to the x-Change intellectual property under license from 3neti R&D OPC.
+The investment will be subscribed into **Open Disbursement Technologies Inc. (ODTI)**, a new operating entity that will hold exclusive commercialization rights to the x-Change intellectual property under license from 3neti R&D OPC.
 
 ### **Equity Structure and Valuation**
 
 | **Investor Participation** | **₱ 100 Million (New Equity)** |
 |-----------------------------|-------------------------------|
-| **Investor Ownership (Post-Money)** | 70 % |
-| **Founders / 3neti R&D OPC** | 30 % (carried equity for IP contribution) |
-| **Post-Money Valuation** | ₱ 143 – ₱ 150 Million |
+| **Investor Ownership (Post-Money)** | 60 % |
+| **3neti R&D OPC** | 30 % (carried equity for IP contribution) |
+|| **Guido Delgado (Chairman & CEO)** | 10 % (founding equity) || **Post-Money Valuation** | ₱ 143 – ₱ 150 Million |
 | **Pre-Money Valuation** | ₱ 43 – ₱ 50 Million |
 | **Instrument Type** | Common equity (Series A), fully paid-in cash |
 
@@ -305,7 +305,7 @@ All capital raised under this round will follow the **₱100 M allocation** outl
 ---
 
 > **Summary for Investors:**  
-> The offer represents an opportunity to acquire a **controlling equity position (70%)** in a **high-growth, regulatory-compliant fintech platform** with a verified path to profitability, no leverage risk, and strong exit potential within five years.  
+> The offer represents an opportunity to acquire a **majority equity position (60%)** in a **high-growth, regulatory-compliant fintech platform** with a verified path to profitability, no leverage risk, and strong exit potential within five years.  
 > Returns are supported by validated financial projections, conservative assumptions, and a disciplined capitalization plan.
 
 ---
@@ -448,7 +448,7 @@ The model reflects a disciplined growth trajectory:
 **Governance Model**
 - **Board Composition:** Five members – two investor representatives, one chairman, one founder/technical director, and one independent director.
 - **Transparency:** Quarterly reporting and annual external audit; governance dashboard accessible to investors and key partners.
-- **R&D Structure:** All core technology development, deployment, and maintenance are outsourced to **3neti R&D OPC** under a performance-based service and licensing agreement. This ensures continuity of innovation while allowing x-Change Philippines, Inc. to focus on operations, compliance, and market expansion.
+- **R&D Structure:** All core technology development, deployment, and maintenance are outsourced to **3neti R&D OPC** under a performance-based service and licensing agreement. This ensures continuity of innovation while allowing Open Disbursement Technologies Inc. (ODTI) to focus on operations, compliance, and market expansion.
 
 ---
 
@@ -483,7 +483,7 @@ This multi-path exit approach ensures flexibility and liquidity — allowing bot
   BSP, AMLC, and Data Privacy compliance mapping; partner EMI and Open Finance alignment.
 
 - **Appendix D – Intellectual Property Plan**  
-  Trademark, copyright, and licensing strategy between 3neti R&D OPC and x-Change Philippines Inc.
+  Trademark, copyright, and licensing strategy between 3neti R&D OPC and Open Disbursement Technologies Inc. (ODTI)
 
 - **Appendix E – Pitch Deck Summary**  
   Condensed presentation highlights, financial snapshot, and key talking points for investor briefings.
@@ -496,7 +496,7 @@ This multi-path exit approach ensures flexibility and liquidity — allowing bot
     5. BSP and DICT – National ID, eGov PH, and Open Finance Framework updates (2024–2025)
 
 - **Appendix G – Corporate & Legal Structure**  
-  Shareholding distribution, governance diagram, and licensing agreement summary between 3neti R&D OPC and x-Change Philippines Inc.
+  Shareholding distribution, governance diagram, and licensing agreement summary between 3neti R&D OPC and Open Disbursement Technologies Inc. (ODTI)
 
 - **Appendix H – Key Personnel Incentive Plan**  
   Role-based allocations, vesting and acceleration rules, KPI-based performance metrics, and sample grant clauses and legal attachments

@@ -1,10 +1,10 @@
 # **Appendix J – Audit & Monitoring Framework**
-*Internal control, compliance, and assurance structure for x-Change Philippines, Inc.*
+*Internal control, compliance, and assurance structure for Open Disbursement Technologies Inc. (ODTI)*
 
 ---
 
 ## J.1 Purpose & Scope
-This framework establishes how **x-Change Philippines, Inc.** ensures continuous oversight, transparency, and regulatory compliance across all operations.  
+This framework establishes how **Open Disbursement Technologies Inc. (ODTI)** ensures continuous oversight, transparency, and regulatory compliance across all operations.  
 It defines the audit architecture, control layers, and information-flow mechanisms between management, the Board, and regulators.  
 The objective is to demonstrate a **“trust-by-design”** environment aligned with BSP, AMLC, and PDPA requirements.
 

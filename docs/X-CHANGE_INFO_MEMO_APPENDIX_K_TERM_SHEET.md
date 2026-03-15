@@ -6,15 +6,15 @@
 
 | **Item** | **Summary** |
 |-----------|-------------|
-| **Issuer / Implementing Company** | **x-Change Philippines, Inc.** – exclusive Philippine licensee of 3neti R&D OPC |
+| **Issuer / Implementing Company** | **Open Disbursement Technologies Inc. (ODTI)** – exclusive Philippine licensee of 3neti R&D OPC |
 | **Intellectual Property Owner** | **3neti Research & Development OPC** – developer and licensor of the x-Change technology |
 | **Instrument Type** | Common Equity (Series A) |
 | **Total Capital Raised** | ₱ 100 million (primary issuance only) |
-| **Pre-Money Valuation** | ₱ 45 – ₱ 50 million |
-| **Post-Money Valuation** | ₱ 140 – ₱ 150 million |
-| **Investor Ownership** | **70 %** (cash subscription) |
-| **Founder / Promoter Ownership** | **30 %** carried equity for IP contribution via exclusive license |
-| **Use of Proceeds** | Platform development (34 %), operations (23 %), working capital (31 %), regulatory (4 %), contingency (8 %) |
+| **Pre-Money Valuation** | ₱ 67 million |
+| **Post-Money Valuation** | ₱ 167 million |
+| **Investor Ownership** | **60 %** (cash subscription) |
+| **3neti R&D OPC** | **30 %** carried equity for IP contribution via exclusive license |
+|| **Guido Delgado (Chairman & CEO)** | **10 %** founding equity || **Use of Proceeds** | Platform development (34 %), operations (23 %), working capital (31 %), regulatory (4 %), contingency (8 %) |
 | **Capital Structure** | 100 % equity-funded; no debt at close |
 
 ---
@@ -29,7 +29,7 @@
 | **Equity IRR (5 yrs)** | ≈ 21 % | 23–25 % | From base cash-flow projection |
 | **Payback Period** | ≈ 3.2 years | < 3 years | Break-even by mid-Year 2 |
 | **Exit Valuation (Year 5)** | ₱ 0.9 – ₱ 1.1 B | ₱ 1.3 B | 8–10× EBITDA multiple |
-| **Investor Equity Value (70 %)** | ₱ 630 – ₱ 770 M | ₱ 900 M | Illustrative exit range |
+| **Investor Equity Value (60 %)** | ₱ 540 – ₱ 660 M | ₱ 900 M | Illustrative exit range |
 
 ---
 
@@ -70,7 +70,7 @@
 
 ## **Conditions Precedent**
 
-- Incorporation and regulatory filings of x-Change Philippines, Inc.
+- Incorporation and regulatory filings of Open Disbursement Technologies Inc. (ODTI)
 - Execution of definitive IP License and Technology Services Agreement with 3neti R&D OPC.
 - Submission of audited financial statements and certificate of no debt.
 - Appointment of board representatives and independent auditor.

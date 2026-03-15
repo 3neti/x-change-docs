@@ -106,9 +106,9 @@ Pay Code is to digital payments what the URL was to the internet: a **universal 
 
 | Holder | Class | % Ownership | Consideration | Notes |
 |---------|-------|-------------:|--------------:|------|
-| **Investor Group** | Common (Series A)** | **70 %** | ₱ 100 M cash | 2 board seats + info rights |
+| **Investor Group** | Common (Series A)** | **60 %** | ₱ 100 M cash | 2 board seats + info rights |
 | **3neti R&D OPC** | Common (Founder/Promoter)** | **30 %** | IP contribution | Exclusive license & tech transfer |
-| **Total** | — | **100 %** | ₱ 100 M | 100 % primary issuance – no debt |
+|| **Guido Delgado** | Common (Founding)** | **10 %** | Founding equity | Chairman & CEO || **Total** | — | **100 %** | ₱ 100 M | 100 % primary issuance – no debt |
 
 ---
 

@@ -17,7 +17,7 @@ Pay Code's three transaction primitives — **Redeemable**, **Payable**, and **S
 | Private Insurance & HMOs | | | ✓ |
 | Government Contractor Payments | ✓ | | ✓ |
 | Utility Billing & Collection | | ✓ | |
-| Micro-Finance | ✓ | ✓ | ✓ |
+|| Micro-Finance | | | ✓ |
 | Gaming & Lottery | ✓ | ✓ | |
 | Public Transport | | ✓ | |
 | Field Work Validation | ✓ | | ✓ |
@@ -186,9 +186,9 @@ Pay Code's three transaction primitives — **Redeemable**, **Payable**, and **S
 
 ## 6. Micro-Finance — Disbursement & Repayment
 
-**Voucher Types:** Redeemable (disbursement) + Payable (repayment) + Settlement (conditional release)
+**Voucher Type:** Settlement
 
-**Problem:** Micro-finance borrowers prefer digital funds but resist being forced into a specific bank or wallet. Traditional models require account opening, app installation, and ecosystem lock-in — creating friction that excludes the most vulnerable borrowers.
+**Problem:** Micro-finance borrowers prefer digital funds but resist being forced into a specific bank or wallet. Traditional models require account opening, app installation, and ecosystem lock-in — creating friction that excludes the most vulnerable borrowers. On the lender side, disbursement and repayment are managed as separate flows across different rails, increasing complexity and reconciliation cost.
 
 **Actors:**
 
@@ -199,27 +199,28 @@ Pay Code's three transaction primitives — **Redeemable**, **Payable**, and **S
 
 **How Pay Code Works:**
 
-**Disbursement (Redeemable):**
+The lender issues a **single settlement Pay Code** that is both redeemable and payable. The settlement voucher carries two amounts:
 
-1. Loan approved; amount encoded into redeemable Pay Code
-2. Borrower selects preferred destination — any wallet, bank, or cash-out point
-3. Pay Code redeemed; funds credited; disbursement recorded against loan account
+- **Denomination (redeemable):** ₱1,000 — the loan principal the borrower can redeem
+- **Target amount (payable):** ₱1,100 — the total repayment amount (principal + interest)
 
-**Repayment (Payable):**
+**One code, full lifecycle:**
 
-1. System generates payable Pay Code tied to loan ID, amount due, and repayment window
-2. Borrower pays via any wallet, bank, or OTC channel
-3. Payment posted automatically; partial or full repayments supported
+1. Loan approved; lender issues a settlement Pay Code with ₱1,000 denomination and ₱1,100 target amount, bound to a Settlement Envelope
+2. Envelope gates validate: KYC verification, credit committee approval, collateral documentation (if applicable)
+3. All gates pass → borrower **redeems ₱1,000** using the Pay Code to any wallet, bank, or cash-out agent
+4. Later, borrower **repays ₱1,100** using the same Pay Code via any supported channel
+5. Repayment recorded; envelope moves to SETTLED; full audit trail captured
 
-**Conditional Release (Settlement):**
-
-For larger or structured loans, a settlement Pay Code with Settlement Envelope gates release on KYC verification, collateral documentation, and credit committee approval.
+The Settlement Envelope orchestrates the entire loan lifecycle — from conditional release through repayment — within a single instrument.
 
 **Why It Matters:**
 
-- Decouples **credit from custody** — borrowers choose their channel
-- Lenders retain full control over approval, limits, and repayment
-- Banks become open disbursement and collection rails, not closed ecosystems
+- **One Pay Code, two actions** — disburse and collect through the same reference
+- Decouples **credit from custody** — borrowers choose their channel for both redemption and repayment
+- Lenders retain full control over approval, limits, and repayment terms via Settlement Envelope gates
+- Eliminates separate disbursement and collection integrations — one instrument, one reconciliation
+- Banks become open lending rails, not closed ecosystems
 - Scales micro-credit sustainably without sacrificing compliance
 
 ---

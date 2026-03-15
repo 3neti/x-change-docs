@@ -1,5 +1,5 @@
 # **Appendix G – Corporate & Legal Structure**
-*Shareholding distribution, governance, and licensing framework between 3neti R&D OPC and x-Change Philippines, Inc.*
+*Shareholding distribution, governance, and licensing framework between 3neti R&D OPC and Open Disbursement Technologies Inc. (ODTI)*
 
 ---
 
@@ -13,16 +13,14 @@ This appendix describes the **ownership**, **governance**, and **contractual rel
 ### G.2.1 Capitalization Snapshot (Post-Money, Series A)
 | Holder | Class | % Ownership | Consideration | Notes |
 |---|---|---:|---:|---|
-| **Investor Group** | Common (Series A) | **63.00 %** | **₱100,000,000** | Cash subscription; two board seats; information & inspection rights |
-| **3neti R&D OPC** | Common (Founder / Promoter) | **27.00 %** | **IP contribution (carried equity)** | Exclusive license & tech contribution per §G.5; 1 board seat |
-| **Employee Incentive Pool (ESOP)** | Option / Phantom Units | **10.00 % (unissued pool)** | — | Board-approved post-money pool for key personnel (e.g., Mr. Delgado, CTO, Compliance Head) |
+| **Investor Group** | Common (Series A) | **60.00 %** | **₱100,000,000** | Cash subscription; two board seats; information & inspection rights |
+| **3neti R&D OPC** | Common (Founder / Promoter) | **30.00 %** | **IP contribution (carried equity)** | Exclusive license & tech contribution per §G.5; 1 board seat |
+| **Guido Delgado** | Common (Founding) | **10.00 %** | **Founding equity** | Chairman & CEO; institutional network and leadership contribution |
 | **Total Authorized Capital** | — | **100 %** | **₱100,000,000** | 100% primary issuance; no debt instruments outstanding |
 
-> **Employee Incentive Pool (ESOP):**  
-> The Board and Shareholders authorize a pool of up to **10 % of fully-diluted shares** to attract and retain key management and technical leaders.  
-> Individual grants (e.g., 3–4 % for Mr. Delgado, 1–1.5 % for CTO, etc.) will vest over four years with a one-year cliff and Board-approved performance accelerators.  
-> Unissued options revert automatically to the pool.  
-> Any increase beyond 10 % requires approval under **Reserved Matters (§G.4.3)**.
+> **Future ESOP Pool:**  
+> The Board may establish an Employee Stock Option Pool (ESOP) of up to **5–10 % of fully-diluted shares** post-Series A to attract and retain key management and technical leaders.  
+> Any ESOP creation requires approval under **Reserved Matters (§G.4.3)** and would dilute all existing holders proportionally.
 
 ---
 
@@ -45,7 +43,7 @@ flowchart LR
     A2["Provides R&amp;D Services"]
   end
 
-  subgraph B["x-Change Philippines, Inc. (Operating Co.)"]
+  subgraph B["ODTI (Operating Co.)"]
     B1["Commercialization &amp; Ops"]
     B2["Compliance &amp; Reporting"]
   end
@@ -62,7 +60,7 @@ flowchart LR
 ### G.3.2 Governance Diagram
 ```mermaid
 flowchart TB
-  SH["Shareholders: Investor Group 63% • 3neti 27% • ESOP 10%"]
+  SH["Shareholders: Investor Group 60% • 3neti 30% • G. Delgado 10%"]
   BOD["Board of Directors (5): 2 Investor • 1 Chair • 1 3neti • 1 Independent"]
   COM1["Audit &amp; Risk Committee"]
   COM2["Tech &amp; Security Committee"]
@@ -116,11 +114,11 @@ Actions requiring **(a) Board supermajority (≥4/5)** and **(b) Shareholder con
 
 ### G.5.1 Exclusive Territory License (Philippines)
 - **Licensor:** 3neti R&D OPC
-- **Licensee:** x-Change Philippines, Inc.
+- **Licensee:** Open Disbursement Technologies Inc. (ODTI)
 - **Scope:** Exclusive commercialization and use of **x-Change** platform **within the Philippines**.
 - **Field of Use:** Programmable vouchers, disbursements, settlement tooling, analytics modules.
 - **Term:** **10 years**, **renewable** (mutual option) with performance KPIs.
-- **Consideration:** **Carried equity (27%)** in lieu of recurring royalties for baseline modules.
+- **Consideration:** **Carried equity (30%)** in lieu of recurring royalties for baseline modules.
 - **Upgrades:** New major modules may be licensed via addenda (see §G.5.4).
 - **Sublicensing:** Permitted to banks/EMIs/enterprises **for use only** (no source code), under standard partner MSAs; **no transfer** of IP ownership.
 
@@ -160,7 +158,7 @@ Actions requiring **(a) Board supermajority (≥4/5)** and **(b) Shareholder con
 ---
 
 ## G.7 Regulatory & Compliance Notes
-- **License Perimeter:** x-Change PH is a **technology infrastructure provider**, operating **under partner EMI/bank license umbrellas**; the company **does not custody funds**.
+- **License Perimeter:** ODTI is a **technology infrastructure provider**, operating **under partner EMI/bank license umbrellas**; the company **does not custody funds**.
 - **Data Privacy:** Compliance with **Philippine Data Privacy Act (PDPA)**; DPA in place with processors; breach-notification workflows.
 - **Audit & Logs:** Centralized logging (SIEM), annual third-party penetration tests, and regulator-ready reports.
 - **Open Finance Alignment:** Connector strategy consistent with BSP frameworks and partner banks’ API policies.

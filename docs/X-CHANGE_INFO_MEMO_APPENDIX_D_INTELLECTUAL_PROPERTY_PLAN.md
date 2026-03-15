@@ -11,7 +11,7 @@
 | Asset Category | Registered / Pending Owner | Description | Notes |
 |----------------|----------------------------|--------------|-------|
 | Core source code, APIs, SDKs | **3neti R&D OPC** | Foundational software modules for voucher issuance, redemption, and programmable disbursement | Covered under registered copyright |
-| Brand name, logos, and marks | **x-Change Philippines Inc.** (licensed use) | Trademarks for public-facing operations | Owned by 3neti R&D OPC, licensed exclusively to x-Change PH |
+| Brand name, logos, and marks | **Open Disbursement Technologies Inc. (ODTI)** (licensed use) | Trademarks for public-facing operations | Owned by 3neti R&D OPC, licensed exclusively to ODTI |
 | Infrastructure scripts, templates, and models | **3neti R&D OPC** | Deployment automation, AI models, and data templates | Proprietary assets under confidentiality agreements |
 | Documentation and design materials | Shared | Manuals, technical docs, and marketing creatives | Subject to mutual IP acknowledgment |
 
@@ -42,7 +42,7 @@
 | Party | Role | Rights | Obligations |
 |--------|------|---------|--------------|
 | **3neti R&D OPC** | IP Owner / Licensor | Grants exclusive Philippine operating license | Maintains R&D, updates, and patents |
-| **x-Change Philippines Inc.** | Licensee / Operator | Uses IP for commercial deployment | Pays royalties / license fees; ensures compliance |
+| **Open Disbursement Technologies Inc. (ODTI)** | Licensee / Operator | Uses IP for commercial deployment | Pays royalties / license fees; ensures compliance |
 | **Partners (Banks, EMIs, Enterprises)** | Sub-licensees / Integrators | Limited use via API / SDK agreements | Adhere to usage, branding, and data-security clauses |
 
 ---

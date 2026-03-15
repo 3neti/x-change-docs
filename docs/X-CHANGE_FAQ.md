@@ -177,7 +177,7 @@ A: The x-Change IP portfolio (patent pending) covers five areas:
 4. **Driver Composition System** — YAML-based composable workflow configuration with inheritance
 5. **Form Flow System** — autonomous multi-step input collection with declarative transformation
 
-All IP is owned by **3neti Research & Development OPC** and exclusively licensed to x-Change Philippines, Inc.
+All IP is owned by **3neti Research & Development OPC** and exclusively licensed to Open Disbursement Technologies Inc. (ODTI)
 
 **Q: What's the competitive moat?**  
 A:

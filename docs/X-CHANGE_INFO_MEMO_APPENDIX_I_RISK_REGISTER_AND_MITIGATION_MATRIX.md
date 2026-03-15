@@ -5,7 +5,7 @@
 
 ## I.1 Overview
 
-This **Risk Register** identifies the major risks that could affect the operations, regulatory standing, or commercial success of **x-Change Philippines, Inc.** and its technology licensor **3neti R&D OPC**.  
+This **Risk Register** identifies the major risks that could affect the operations, regulatory standing, or commercial success of **Open Disbursement Technologies Inc. (ODTI)** and its technology licensor **3neti R&D OPC**.  
 Each risk is assessed based on:
 
 | Criterion | Description |
@@ -91,7 +91,7 @@ The matrix is reviewed **semi-annually** by the **Audit & Risk Committee** and u
 | **Market Competition** | Entry of new fintechs or in-house voucher systems. | M | H | 🔴 | Speed to market; 5 patent-pending IP claims; three-type architecture raises replication barrier. | CEO / CPO |
 | **Adoption Risk** | Slow uptake by banks or end users. | M | M | 🟠 | Partner incentive programs; phased voucher-type rollout (redeemable first, then payable, then settlement). | COO |
 | **Reputation Risk** | Negative press from failed disbursements or misuse. | M | H | 🔴 | Transparency, PR response plan, independent audits. | CEO / Comms |
-| **Strategic Misalignment** | Divergent goals between 3neti and x-Change PH. | L | M | 🟡 | Annual strategy offsite; joint steering committee. | Board |
+| **Strategic Misalignment** | Divergent goals between 3neti and ODTI. | L | M | 🟡 | Annual strategy offsite; joint steering committee. | Board |
 
 ### I.3.6 Settlement & Collection-Specific Risks
 

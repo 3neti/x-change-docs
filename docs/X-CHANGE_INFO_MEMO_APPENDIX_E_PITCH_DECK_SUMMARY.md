@@ -133,6 +133,7 @@ Pay Code is to digital payments what the URL was to the internet: a **universal 
 6. **Impact + Profit:** bridges financial inclusion and auditability for public funds.
 7. **ESG Fit:** supports UN SDG 9 and 16 through digital infrastructure and transparency.
 8. **Exit Path:** Strategic acquisition or Series B liquidity within 5 years.
+9. **Bank Adoption Incentive:** Banks generate transaction revenue, float income, and merchant acquisition from existing deposits — Pay Code turns passive balances into active settlement instruments. Strategic bank investors combine platform adoption with equity ownership.
 
 ---
 

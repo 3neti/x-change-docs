@@ -88,6 +88,19 @@ Together, these verticals form a **₱8+ trillion addressable market** — compa
 - **Enterprises and brands:** issue digital incentives, rebates, and rewards via their financial partners, leveraging the same secure, data-driven voucher systems.
 
 > *In this model, **x-Change** serves as the underlying technology layer powering disbursements across sectors, while banks and EMIs remain the primary customer interface and revenue-sharing partners.
+
+**Why Banks Will Adopt**  
+Pay Code transforms a bank's deposit base from a passive liability into an **active revenue-generating instrument**. For banks, adoption is driven by direct economic incentives:
+
+- **Transaction revenue** — fees at issuance, redemption, collection, and settlement across all three Pay Code types
+- **Float income** — issued but unredeemed codes keep funds within the bank, generating treasury yield
+- **Merchant acquisition at near-zero cost** — Pay Code acceptance requires only QR or code entry, not POS terminals or card network agreements
+- **Strategic defense against wallets** — banks reclaim payment flows currently controlled by GCash, Maya, and other closed ecosystems
+- **Lending from transaction data** — Pay Code activity generates behavioral data that supports micro-loans, merchant financing, and consumer credit products
+- **Rural bank network extension** — commercial banks can deploy Pay Code through rural bank partners via the federation protocol, expanding reach without branch investment
+
+Pay Code effectively gives banks a **bank-controlled payment rail** — analogous to card scheme economics, but without dependency on external networks. For the full bank-facing analysis, see the [Bank Strategic Opportunity](X-CHANGE_BANK_STRATEGIC_OPPORTUNITY.md).
+
 ---
 
 ## **3. The Solution**

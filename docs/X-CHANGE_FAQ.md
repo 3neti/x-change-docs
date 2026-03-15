@@ -149,6 +149,21 @@ A: The concept appears simple, but the execution involves 50+ database tables, 1
 **Q: Is x-Change an aggregator?**  
 A: Think of x-Change as a **scheme** — analogous to Visa or Mastercard. It enforces rules, routes messages, and ensures auditability. Banks retain local control of issuance and settlement. x-Change provides the protocol.
 
+**Q: What revenue can banks generate from Pay Code?**  
+A: Banks earn revenue across multiple streams: **issuance fees** (charged to institutional clients), **redemption/collection fees** (at each transaction), **settlement processing fees** (for envelope-based conditional execution), **merchant processing fees** (per-transaction or subscription), **float income** (from issued but unredeemed codes where funds remain in bank custody), and **interbank clearing fees** (when Pay Codes cross institutional boundaries via the federation protocol). This creates a transaction-based revenue model comparable to card network economics — but controlled by the bank.
+
+**Q: How does Pay Code help banks compete with digital wallets?**  
+A: Digital wallets like GCash and Maya increasingly control payment flows that historically belonged to banks. Pay Code allows banks to reclaim these flows by offering simple payment experiences (QR/code entry — no POS terminals), programmable capabilities that exceed wallet functionality (expiry, geo-fencing, channel restrictions, evidence gating), and merchant acceptance at near-zero infrastructure cost. The Settlement Envelope provides conditional settlement capability that no wallet can replicate. This positions banks as **primary payment infrastructure providers** rather than passive account custodians.
+
+**Q: Can rural banks participate in the Pay Code network?**  
+A: Yes. Pay Code supports a **tiered ecosystem** where a commercial or universal bank licenses the platform through x-Change, and rural banks access the system through the acquiring bank's infrastructure. Rural banks issue and redeem Pay Codes for their customers without large technology investments. Both the acquiring bank (clearing fees) and rural banks (local processing fees) benefit from transaction flows. This model advances financial inclusion while generating revenue for the entire banking chain.
+
+**Q: What lending opportunities does Pay Code create?**  
+A: Pay Code activity generates behavioral data — spending patterns, merchant activity, remittance flows, and corporate disbursement patterns — that banks can use to develop new credit products: micro-loans based on transaction history, merchant financing tied to settlement volume, working capital loans for enterprises, and consumer credit based on redemption behavior. Banks that deploy Pay Code gain a **data advantage** that turns payment infrastructure into a credit origination channel.
+
+**Q: Can banks invest in x-Change as well as adopt the platform?**  
+A: Yes. ODTI's current ₱100 million equity raise is open to strategic bank investors. Banks can participate as both **platform customers** (deploying Pay Code for transaction revenue) and **equity investors** (acquiring ownership in the infrastructure layer). Strategic bank investors gain board-level governance participation, priority integration, influence over the platform roadmap, and equity upside in a platform targeting ₱0.9–₱1.1 billion valuation within five years. See the [Bank Strategic Opportunity](X-CHANGE_BANK_STRATEGIC_OPPORTUNITY.md) and [Information Memorandum](X-CHANGE_INFO_MEMO.md) for details.
+
 ---
 
 ## 💼 BUSINESS MODEL

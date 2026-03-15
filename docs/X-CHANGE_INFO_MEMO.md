@@ -336,7 +336,7 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 
 | **Category** | **Amount (₱ Million)** | **% of Total** | **Description / Key Components** |
 |---------------|-------------------------|----------------|----------------------------------|
-| **Platform Development — 3neti R&D Technology Contract** | 30 | 30 % | 8-workstream platform build: core voucher engine, Settlement Envelope, Form Flow, payment gateways, federation/security, PWA/kiosk, API layer, IP registration |
+| **Technology Capitalization & Platform Completion — 3neti R&D OPC** | 30 | 30 % | Technology capitalization and production completion: core voucher engine, Settlement Envelope protocol, Form Flow, payment gateways, federation infrastructure, PWA/kiosk, API layer, IP registration (8 workstreams) |
 | **Operating Expenses (Pre-Break-Even)** | 23 | 23 % | Salaries, marketing, compliance, cloud infrastructure, and administrative overhead for first 24 months |
 | **Working Capital & Transaction Float** | 31 | 31 % | Liquidity buffer for voucher settlements, receivables, and deferred revenue management |
 | **Regulatory & Legal Reserves** | 4 | 4 % | Licensing, BSP & AMLC compliance, audit, insurance, contingency |
@@ -345,24 +345,84 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 
 ---
 
+### **Technology Origin & Intellectual Property Contribution**
+
+The **x-Change architecture** was conceived and developed by **3neti Research & Development OPC** as part of its internal fintech research program.  
+The core design principles, protocol definitions, and prototype components of the platform have already been established prior to the capitalization of **Open Disbursement Technologies Inc. (ODTI)**.
+
+These include early implementations of:
+
+- the **Pay Code voucher orchestration framework**
+- the **Settlement Envelope conditional execution system**
+- the **institutional federation protocol for multi-bank environments**
+- voucher lifecycle orchestration pipelines
+- API structures for issuer and redemption channels
+
+The ₱30 million allocation in this round therefore represents **capitalization of proprietary technology and completion of production-grade infrastructure**, not greenfield development.
+
+Under the licensing agreement:
+
+- **3neti R&D OPC retains ownership of the intellectual property**
+- **ODTI receives exclusive commercialization rights for the Philippines**
+- **3neti continues as the principal technology architect and development partner**
+
+This structure ensures that the venture benefits from the **inventor’s direct involvement while protecting long-term intellectual property continuity**.
+
+---
+
 ### **Funding Utilization Rationale**
 
-- **Platform Development — 3neti R&D Technology Contract (₱ 30 M):**  
-  The ₱30M is not a simple outsourcing fee — it capitalizes the construction of a **patent-pending, federation-ready fintech infrastructure** comprising 8 interdependent workstreams with 50+ database tables, 100+ API endpoints, and a composable driver system. 3neti R&D OPC, as the IP creator and sole entity with deep platform knowledge, is the only contractor capable of delivering this within the required timeline while maintaining architectural integrity and IP coherence.
+- **Technology Capitalization & Platform Completion — 3neti R&D OPC (₱ 30 M):**  
+  The ₱30M allocation represents **capitalization and production completion of the x-Change platform technology**, developed by **3neti Research & Development OPC**, the inventor and intellectual property owner of the Pay Code architecture.
+
+  Rather than a conventional software outsourcing contract, this allocation funds the **final engineering, production hardening, and integration of a proprietary payment orchestration platform** designed to operate across banks, EMIs, government institutions, and enterprise partners.
+
+  The x-Change platform consists of **three foundational technology systems**:
+
+  1. **Voucher Orchestration Engine**  
+     The lifecycle engine responsible for issuance, validation, routing, redemption, and settlement of Pay Codes across disbursement, collection, and settlement flows.
+
+  2. **Settlement Envelope Protocol**  
+     A programmable conditional execution framework allowing payments to be released only after structured evidence, approvals, and computed conditions are satisfied.
+
+  3. **Institutional Federation Network**  
+     A cryptographically secure architecture enabling multiple financial institutions to participate in a shared voucher settlement ecosystem while maintaining independent custody and regulatory compliance.
+
+  The eight workstreams listed below represent **implementation milestones required to bring these systems into full production readiness**.
+
+  The production build is organized into **eight engineering workstreams**, each representing a major subsystem of the x-Change platform.  
+  These workstreams are not independent products but **integrated components of a unified fintech infrastructure layer**, collectively forming the Pay Code orchestration network.
+
+  Funding covers:
+
+  - production-grade implementation
+  - infrastructure hardening
+  - institutional integration readiness
+  - regulatory compliance preparation
+  - intellectual property documentation and protection
 
   **8-Workstream Breakdown:**
 
   | WS | Scope | Amount |
   |----|-------|--------|
-  | WS-1: Core Voucher Engine | Three-type model, post-generation/redemption pipelines, dynamic pricing, campaign system | ₱5.0M |
-  | WS-2: Settlement Envelope | Envelope state machine (10 states), YAML driver system, driver composition, checklist/signals/gates, contribution tokens, audit logging | ₱6.0M |
-  | WS-3: Form Flow System | Session-based state management, YAML transformation, 5 handler packages (form, KYC, location, selfie, signature) | ₱4.0M |
-  | WS-4: Payment Gateway & Wallet | Multi-gateway abstraction, system wallet, balance reconciliation, disbursement pipeline | ₱3.5M |
-  | WS-5: Federation & Security | Cryptographic licensing, dual-signature verification, clearing attestation logs, namespace isolation, penetration testing, SOC 2 readiness | ₱5.5M |
-  | WS-6: PWA / Kiosk & Frontend | Kiosk skin YAML architecture, PWA with service worker, voucher show page, portal, QR generation/scanning | ₱2.5M |
-  | WS-7: API & Notifications | RESTful API v1, webhook system, SMS/email integration, Postman suites, Sanctum authentication | ₱1.5M |
-  | WS-8: IP Registration & Docs | 3 patent filings, trademark registration, copyright registration, BSP/AMLC compliance documentation | ₱2.0M |
+  | WS-1: Core Voucher Engine | Three-type voucher orchestration engine supporting redeemable, payable, and settlement Pay Codes; lifecycle state management, routing pipelines, pricing logic, and institutional campaign configuration. | ₱5.0M |
+  | WS-2: Settlement Envelope | Implementation of the **Settlement Envelope Protocol**, including envelope state machines, YAML driver architecture, composable driver inheritance, evidence checklists, approval signals, conditional execution gates, and immutable audit logging. | ₱6.0M |
+  | WS-3: Form Flow System | Dynamic **compliance workflow engine** supporting multi-step institutional input flows including KYC capture, document submission, geolocation verification, selfie validation, and digital signatures using YAML-driven configuration. | ₱4.0M |
+  | WS-4: Payment Gateway & Wallet | Multi-rail payment gateway abstraction enabling routing across banks, EMIs, and cash-out agents; system wallet management, transaction reconciliation, and settlement routing. | ₱3.5M |
+  | WS-5: Federation & Security | Institutional **federation and security infrastructure**, including cryptographic licensing, dual-signature verification, clearing attestation logs, namespace isolation for participating institutions, and security hardening. | ₱5.5M |
+  | WS-6: PWA / Kiosk & Frontend | Device-agnostic transaction interface including PWA architecture, kiosk deployments, voucher display portals, QR generation/scanning, and configurable UI skins for institutional partners. | ₱2.5M |
+  | WS-7: API & Notifications | Institutional integration layer including RESTful API infrastructure, webhook notification system, SMS/email messaging gateways, authentication systems, and integration toolkits for partner institutions. | ₱1.5M |
+  | WS-8: IP Registration & Docs | Intellectual property protection and regulatory documentation, including patent filings, trademarks, copyright registrations, and preparation of compliance documentation required for institutional partnerships. | ₱2.0M |
   | **Total** | | **₱30.0M** |
+
+  This development structure ensures that the platform is built as a **cohesive institutional infrastructure layer**, rather than a collection of independent applications.  
+  The result is a production-grade system capable of supporting large-scale disbursement, collection, and conditional settlement operations across multiple financial institutions.
+
+  From an investment perspective, the technology contribution from **3neti R&D OPC** represents the creation of a **new payment instruction protocol**, comparable in structural role to how card networks introduced standardized transaction frameworks for banks.
+
+  Where traditional payment networks route card transactions, **x-Change introduces a programmable voucher instruction layer** capable of orchestrating disbursement, collection, and settlement across heterogeneous financial rails.
+
+  This architectural role significantly expands the platform’s long-term licensing potential and strategic value.
 
   Amortized over 18 months, milestone-gated. Plus recurring R&D (OPEX): ₱4.2M/year (₱350K/month) for ongoing maintenance, feature updates, driver development, and security patches.
 
@@ -388,6 +448,21 @@ The funding structure remains **100 % equity-financed**, ensuring clean ownershi
 | **Phase 2 – Pilot & Partner Onboarding** | Months 7–12 | ₱ 25 M | Pilot disbursement partners live; compliance certification |
 | **Phase 3 – Scale & National Launch** | Months 13–24 | ₱ 25 M | Transaction volume > 750 000 tx/mo; break-even achieved |
 | **Phase 4 – Reserve & Expansion Fund** | Year 3 onward | ₱ 10 M | Regional pilots or product expansion funded from internal cash flow |
+
+---
+
+### Technology Capitalization Summary
+
+The ₱30M technology allocation effectively capitalizes the following proprietary systems developed by 3neti R&D OPC:
+
+| Technology Asset | Strategic Function |
+|---|---|
+| Pay Code Voucher Protocol | Rail-agnostic payment instruction layer |
+| Voucher Orchestration Engine | Lifecycle routing and transaction management |
+| Settlement Envelope Protocol | Programmable conditional settlement framework |
+| Institutional Federation Network | Multi-bank interoperability architecture |
+
+Together these systems form the **x-Change programmable payment orchestration platform**, positioning the venture as a **financial infrastructure provider rather than a single-purpose application vendor**.
 
 ---
 

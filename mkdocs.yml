@@ -1,4 +1,4 @@
-site_name: x-Change — Pay Code Orchestration Platform
+site_name: ODTI — Philippine Pay Code Scheme Company
 
 theme:
   name: material
@@ -14,8 +14,8 @@ plugins:
   - with-pdf:
       author: 'Lester B. Hurtado'
       copyright: 'Copyright © 2025 3neti R&D OPC'
-      cover_title: 'x-Change — Pay Code Orchestration Platform'
-      cover_subtitle: 'The Pay Code Orchestration Platform for Disbursement, Collection & Settlement'
+      cover_title: 'ODTI — Philippine Pay Code Scheme Company'
+      cover_subtitle: 'Powered by the x-Change Platform for Disbursement, Collection & Settlement'
       cover_logo: null
       back_cover: true
       toc_title: 'Table of Contents'
